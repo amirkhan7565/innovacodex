@@ -1,0 +1,141 @@
+ /* Meet the team section start */
+ .meet-team .card {
+     border: 1px solid #4d4d4d !important;
+     transition: all 0.3s linear;
+     width: 22%;
+ }
+
+ .meet-team .card:hover .team-info {
+     padding: 40px 10px !important;
+ }
+
+ .meet-team .card .team-info {
+     border: 1px solid #4d4d4d !important;
+     background-color: #000000d6 !important;
+     transition: all 0.3s linear;
+ }
+
+
+ .meet-team .brand-images {
+     border-bottom: 1px solid #ffffff1a;
+ }
+
+ .meet-team .slick-slider .slick-track {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+ }
+
+ .meet-team .slick-track .slick-slide {
+     width: 14% !important;
+ }
+
+ .meet-team .slick-prev,
+ .slick-next {
+     display: none !important;
+ }
+
+
+ /* Meet the team section end */
+
+
+ /* Core Values section start   */
+ .core-values .card-section .card {
+     width: 32%;
+     transition: all 0.3s linear;
+ }
+
+ .core-values .card-section .card:hover {
+     border-color: rgb(239 239 239 / 17%);
+     background: #111;
+     translate: 0 -10px
+ }
+
+ .core-values .card-section .card h5 {
+     transition: all 0.3s linear;
+ }
+
+ .core-values .card-section .card:hover h5 {
+     background: linear-gradient(to right top, #67ffc6, #019960, #67ffc6, #02cd82, #03ffa1);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-size: 200% 100%;
+     background-position: -100%;
+ }
+
+ .core-values .card-section .card img {
+     width: 15%;
+ }
+
+ /*  Core Values section end */
+
+
+ /* Our Happy Clients section start  */
+ .our-client .logo-section img {
+     transition: all 0.3s linear;
+ }
+
+ .our-client .logo-section img:hover {
+     opacity: 0.6;
+     transform: translateY(-2px);
+ }
+
+ .our-client .slick-slider .slick-track {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+ }
+
+ .our-client .slick-track .slick-slide img {
+     width: 73% !important;
+ }
+
+ .our-client .slick-prev,
+ .slick-next {
+     display: none !important;
+ }
+
+ /* Our Happy Clients section end */
+
+
+
+ @media (max-width: 991.98px) {
+     .meet-team .card {
+         width: 27%;
+     }
+
+     .meet-team .card:hover .team-info {
+         padding: 30px 10px !important;
+     }
+
+     .core-values .card-section .card {
+         width: 48%;
+     }
+ }
+
+ @media (max-width: 767.98px) {
+     .meet-team .card {
+         width: 35%;
+     }
+
+     .meet-team .card:hover .team-info {
+         padding: 22px 10px !important;
+     }
+
+     .core-values .card-section .card {
+         width: 100%;
+     }
+ }
+
+ @media (max-width: 575.98px) {
+     .meet-team .card {
+         width: 40%;
+     }
+
+     .our-client .slick-track .slick-slide img {
+         width: 50% !important;
+     }
+
+ }

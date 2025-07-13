@@ -1,0 +1,22 @@
+ /* explore innovacodex section start  */
+ .explore-innovacodex span {
+     letter-spacing: 8px;
+ }
+
+ /* explore innovacodex section end */
+
+
+ /* product-disocvery section start  */
+ .product-discovery .image-wrapper img {
+     width: 80%;
+ }
+
+ /* product-disocvery section end */
+
+
+ @media (max-width: 1199.98px) {
+     .mobilecoderz-image {
+         width: 25%;
+     }
+
+ }

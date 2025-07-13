@@ -1,0 +1,52 @@
+/* career section start  */
+.career-section .experience-section .box {
+    width: 30%;
+    border: 1px solid #3a3a3a;
+    transition: all 0.3s linear;
+}
+
+.career-section .experience-section .box:hover {
+    background: #817ce7;
+    border-color: transparent;
+    transform: translateY(-6px);
+}
+
+.career-section .btn-section .btn-primary {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+/* career section end */
+
+@media (max-width:1199.98px) {
+    .career-section .btn-section .btn-primary {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .career-section .btn-section .btn-primary {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .career-section .btn-section .btn-primary {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .career-section .btn-section .btn-primary {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .career-section .experience-section .box {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,40 @@
+ /* reviews section start  */
+ .reviews-section .card,
+ .reviews-section .card-section .discover-more {
+     width: 45%;
+ }
+
+ .reviews-section .card .image-wrapper {
+     width: 72px;
+     height: 72px;
+ }
+
+
+ /* reviews section start */
+
+
+ @media (max-width: 1199.98px) {
+     .reviews-section .card .client-position {
+         font-size: 11px;
+     }
+
+     .reviews-section .card .great-experience {
+         font-size: 14px;
+     }
+ }
+
+ @media (max-width: 767.98px) {
+
+     .reviews-section .card,
+     .reviews-section .card-section .discover-more {
+         width: 49%;
+     }
+ }
+
+ @media (max-width:575.98px) {
+
+     .reviews-section .card,
+     .reviews-section .card-section .discover-more {
+         width: 100%;
+     }
+ }

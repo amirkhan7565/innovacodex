@@ -1,0 +1,112 @@
+/* product-delivery section start */
+.product-delivery .delivery-content {
+    line-height: 25px;
+}
+
+/* product-delivery section end */
+
+
+/* when business need section start */
+.product-need .checkbox {
+    width: 20%;
+}
+
+.product-need .ideal-situation p {
+    line-height: 24px;
+}
+
+/* when business need section end */
+
+
+/* outcome-section start */
+.outcomes-section .ideal-outcomes .card {
+    width: 45%;
+}
+
+.outcomes-section .ideal-outcomes .image-wrapper {
+    width: 6%;
+}
+
+/* outcome-section end */
+
+
+/* team involved section start */
+.team-section .teams .team-involved {
+    width: 40%;
+}
+
+/* team involved section end */
+
+
+/* Product Phases section start */
+.product-phases .image-wrapper img {
+    border: 1px solid #fff;
+}
+
+.product-phases .ideation-team {
+    width: 8%;
+}
+
+.product-phases p {
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+/* Product Phases section end */
+
+
+
+
+
+
+@media (max-width: 1199.98px) {
+    .product-delivery .delivery-content {
+        line-height: 21px;
+    }
+
+    .product-phases p {
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .product-need .checkbox {
+        width: 8%;
+    }
+
+    .outcomes-section .list-section {
+        font-size: 14px;
+    }
+}
+
+
+
+
+@media (max-width: 767.98px) {
+    .outcomes-section .list-section {
+        font-size: 13px;
+    }
+
+    .outcomes-section .ideal-outcomes .card {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+    .outcomes-section .list-section {
+        font-size: 12px;
+    }
+
+    .team-section .teams .team-involved {
+        width: 100%;
+    }
+
+    .product-discovery .btn-secondary {
+        width: 154px;
+        height: 40px;
+    }
+
+
+}

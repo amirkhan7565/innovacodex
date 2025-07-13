@@ -1,0 +1,220 @@
+ /* Need help building an AI solution section start  */
+ .ai-specialists {
+     background: url(../images/expertgradientbg.png) no-repeat center center/ cover;
+     padding: 85px 85px 58px 85px;
+ }
+
+ /* Need help building an AI solution section end */
+
+ /* Transform Your Business section start */
+ .transform-business {
+     margin-top: 110px;
+     margin-bottom: 115px;
+ }
+
+ .transform-business ul li {
+     list-style: disc;
+ }
+
+ /* Transform Your Business section end */
+
+
+ /* Tech Stacks We Implement section start */
+ .ai-tech-stacks .stacks-list {
+     border-bottom: 1px solid #525252;
+
+ }
+
+ /* Tech Stacks We Implement section end */
+
+
+ /* Why Hire MobileCoderz For AI section start */
+ .hire-mobilecoderz .card-section .card {
+     padding-bottom: 35px;
+     background-image: linear-gradient(#111111, #111111), linear-gradient(270.87deg, #03ffa1 -61.75%, #018d59 -61.73%, #01bd78 116.21%);
+     background-origin: border-box;
+     background-clip: padding-box, border-box;
+     width: 46%;
+ }
+
+ /* Why Hire MobileCoderz For AI section end */
+
+
+
+
+
+ @media (max-width: 1199.98px) {
+     .ai-specialists {
+         padding: 75px 75px 48px 75px;
+     }
+
+     .transform-business {
+         margin-top: 90px;
+         margin-bottom: 95px;
+     }
+
+ }
+
+ /* Coding Standards of Our Custom AI  section start */
+ .ai-standards .card-section .card h5:before {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 1px;
+     width: 116px;
+     border-top: 1px dashed #ffffff75
+ }
+
+ /* Coding Standards of Our Custom AI  section end */
+
+
+ /* User-First Approach section start  */
+ .first-approach .accordion-body {
+     border-top: 1px dashed #fff !important;
+ }
+
+
+ .first-approach .accordion-button:not(.collapsed) h5 {
+     background: linear-gradient(270.87deg, #2241d3 -61.75%, #fc5c7d -61.73%, #6f81f7 116.21%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .first-approach .accordion-button {
+     transition: all 0.3s linear;
+ }
+
+ .first-approach .accordion-button::after {
+     background-image: url(../images/chevron-down.png) !important;
+     opacity: 0.6;
+ }
+
+ /* User-First Approach section end */
+
+
+ /* Step-by-Step AI Development Process section start */
+ .ai-development-process .swiper-slide .card {
+     border: 1px solid #555555;
+ }
+
+ .ai-development-process .swiper-wrapper .swiper-slide h4::before {
+     content: "";
+     position: absolute;
+     background: url(../images/dotttedLine.svg) no-repeat;
+     top: 29%;
+     width: 50%;
+     height: 6px;
+
+ }
+
+ .ai-development-process .button-prev,
+ .ai-development-process .button-next {
+     width: 40px;
+     height: 40px;
+     transform: translateY(-40px);
+ }
+
+ .ai-development-process .button-prev {
+     background-color: #373737;
+ }
+
+ .ai-development-process .button-next {
+     background: linear-gradient(270.87deg, #018152 -61.75%, #03ffa1 -61.73%, #018152 116.21%);
+ }
+
+ .ai-development-process .button-prev {
+     right: 55px;
+ }
+
+ .ai-development-process .button-next {
+     right: 0;
+ }
+
+ .ai-development-process .swiper-pagination {
+     transform: translateY(50px);
+ }
+
+ .ai-development-process .swiper-pagination .swiper-pagination-bullet {
+     background-color: rgba(231, 240, 252, 0.24);
+     width: 13px;
+     height: 13px;
+ }
+
+ .ai-development-process .swiper-pagination .swiper-pagination-bullet-active {
+     background-color: #d9d9d9;
+ }
+
+ /*  Step-by-Step AI Development Process section end */
+
+
+
+
+
+ @media (max-width: 1199.98px) {
+     .ai-development-process .swiper-wrapper .swiper-slide h4::before {
+         top: 26%;
+     }
+ }
+
+ @media (max-width: 991.98px) {
+     .ai-specialists {
+         padding: 65px 65px 38px 65px;
+     }
+
+     .transform-business {
+         margin-top: 80px;
+         margin-bottom: 85px;
+     }
+
+     .hire-mobilecoderz .card-section .card {
+         width: 48%;
+         padding-bottom: 30px;
+     }
+
+ }
+
+ @media (max-width: 767.98px) {
+     .ai-specialists {
+         padding: 55px 55px 28px 55px;
+     }
+
+     .transform-business {
+         margin-top: 70px;
+         margin-bottom: 75px;
+     }
+
+     .transform-business ul li {
+         list-style: none;
+     }
+
+     .hire-mobilecoderz .card-section .card {
+         width: 100%;
+         padding-bottom: 28px;
+     }
+
+     .ai-development-process .swiper-wrapper .swiper-slide h4::before {
+         top: 19%;
+     }
+
+     .ai-development-process .swiper-pagination .swiper-pagination-bullet {
+         width: 10px;
+         height: 10px;
+     }
+ }
+
+
+ @media (max-width: 575.98px) {
+     .ai-specialists {
+         padding: 45px 45px 18px 45px;
+     }
+
+     .transform-business {
+         margin-top: 60px;
+         margin-bottom: 65px;
+     }
+
+     .ai-development-process .swiper-wrapper .swiper-slide h4::before {
+         top: 27%;
+     }
+ }

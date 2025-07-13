@@ -1,0 +1,45 @@
+ /* What Makes MobileCoderz a Go-to On section start  */
+ .what-makes-mobilecoderz .demand-section {
+     width: 42%;
+ }
+
+ .what-makes-mobilecoderz .demand-section h5::before {
+     content: "";
+     position: absolute;
+     left: -16px;
+     top: 8px;
+     transform: translateY(-50%);
+     width: 6px;
+     height: 6px;
+     border-radius: 50%;
+     background: linear-gradient(270.87deg, #87f5e0 -61.75%, #17b99c -61.73%, #17b99c 116.21%);
+ }
+
+ /* What Makes MobileCoderz a Go-to On section end */
+ @media (max-width: 991.98px) {
+     .what-makes-mobilecoderz .demand-section h5::before {
+         top: 7px;
+     }
+
+     .what-makes-mobilecoderz .demand-section {
+         width: 48%;
+     }
+ }
+
+ @media (max-width: 767.98px) {
+     .what-makes-mobilecoderz .demand-section h5::before {
+         top: 6px;
+     }
+ }
+
+ @media (max-width: 575.98px) {
+     .what-makes-mobilecoderz .demand-section {
+         width: 100%;
+     }
+
+     .what-makes-mobilecoderz .demand-section h5::before {
+         left: -10px;
+         width: 4px;
+         height: 4px;
+     }
+ }

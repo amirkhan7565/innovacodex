@@ -1,0 +1,573 @@
+/* hero-section start */
+.hero-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-section .plus,
+.hero-section .plus-two {
+    animation: rotation 6s ease infinite;
+}
+
+.hero-section .line-decor {
+    top: 13px;
+    left: 30px;
+}
+
+.hero-section .line-decor-two {
+    transform: rotate(180deg);
+}
+
+.hero-section .plus-two {
+    top: 3px;
+    right: -30px;
+}
+
+.hero-section .image-wrapper {
+    animation: bounce 12s infinite;
+}
+
+.hero-section .slick-slider .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero-section .slick-track .slick-slide {
+    width: 14% !important;
+}
+
+.hero-section .slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+/* hero-section end */
+
+
+/* service-solutions section start */
+/* .service-solutions::after,
+.service-solutions::before,
+.faq-section::before,
+.project-inquiries::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: -5;
+    background: url(../images/Dark\ green\ shadow.png) no-repeat center center;
+    opacity: 0.7;
+    scale: 0.8;
+} */
+
+.service-solutions::before {
+    scale: 0.8;
+    transform: initial;
+    bottom: -125px;
+    right: -283px;
+}
+
+.service-solutions::after {
+    left: -337px;
+    top: 0;
+    scale: 0.8;
+}
+
+.service-solutions .nav .nav-link:first-child {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.service-solutions .nav .nav-link {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.service-solutions .nav-pills .nav-link.active .numbers {
+    color: #03ffa1 !important;
+}
+
+.service-solutions .nav-pills .nav-link.active h6 {
+    background: linear-gradient(to right top, #67ffc6, #019960, #67ffc6, #02cd82, #03ffa1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 0px #03ffa1;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgba(2, 137, 87, .3) !important;
+    border: 1px solid #0289574d !important;
+    box-shadow: 0 5px 15px rgba(3, 255, 161, .4) inset;
+}
+
+.service-solutions .tab-content {
+    padding: 50px;
+    background-color: #0289574d !important;
+    border: 1px solid #0289574d !important;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px #03ffa166 inset;
+
+}
+
+.service-solutions .tab-content p {
+    line-height: 31px;
+}
+
+.service-solutions .tab-content .app-components .app-development {
+    width: 25%;
+}
+
+.service-solutions .tab-content .app-components .app-development i {
+    width: 56px;
+    height: 56px;
+}
+
+
+
+.service-solutions .accordion-button {
+    transition: all 0.3s linear;
+    background-color: #0a0a0a !important;
+    border: 1px solid #0289578a;
+}
+
+.service-solutions .accordion-button::after {
+    background-image: url(../images/chevron-down.png) !important;
+}
+
+.service-solutions .accordion-body .app-components .app-development i {
+    width: 20px;
+    height: 20px;
+}
+
+.service-solutions .darksoul-glowing-button1 {
+    justify-self: end;
+}
+
+/* service-solutions section end */
+
+
+/* team section start */
+
+.team-section .image-wrapper .image {
+    opacity: 0;
+    border-radius: 10px 10px 30px 30px;
+    animation: change-img-anim 20s infinite;
+}
+
+.team-section .image-wrapper .image:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.team-section .image-wrapper .image:nth-of-type(2) {
+    animation-delay: 10s;
+}
+
+.team-section .delivering-section-one {
+    left: 65px;
+    top: 36%;
+    transform: translate(118px, 50px);
+}
+
+.team-section .delivering-section-two {
+    line-height: 45px;
+}
+
+.team-section .gradient-curve {
+    padding: 50px 20px 50px;
+    margin-top: 18px;
+    background-color: rgba(2, 137, 87, .3) !important;
+    box-shadow: 0 5px 15px rgba(3, 255, 161, .4) inset;
+    color: #03ffa1;
+    text-shadow: 0px 0px 0 #03ffa1;
+}
+
+.team-section .gradient-curve p {
+    opacity: 0.6;
+}
+
+/* team section end */
+
+
+/* brand section start */
+.brand-section .slick-slider .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.brand-section .slick-track .slick-slide img {
+    width: 65% !important;
+}
+
+.brand-section .slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.brand-section .btn-tertiary {
+    margin-top: 60px;
+}
+
+.brand-section .btn-tertiary i {
+    animation: bounce-right 2s infinite;
+}
+
+/* brand section end */
+
+
+/* businesses prefer us section start */
+.businesses-section ul li::after {
+    content: "";
+    background: url(../images/homepage-sprite-fotor-2024102032328.png) no-repeat;
+    background-position: -314px -246px;
+    position: absolute;
+    top: -5px;
+    animation: circular-motion 16s linear infinite;
+    left: -11px;
+    width: 36px;
+    height: 31px;
+    scale: 0.7;
+}
+
+/* businesses prefer us section end */
+
+
+/* transfer business section start */
+.transfer-business {
+    background-color: rgba(2, 137, 87, .3) !important;
+    border: 1px solid #0289574d !important;
+    /* box-shadow: 0px 0px 1px 0 #03ffa1; */
+    box-shadow: 0 5px 15px rgba(3, 255, 161, .4) inset;
+    border-radius: 22px;
+}
+
+.transfer-business .diamond-icon {
+    position: absolute;
+    top: -48px;
+    left: -8px;
+    width: 100px;
+    animation: circular-motion 28s linear infinite;
+}
+
+.transfer-business .toy-icon {
+    position: absolute;
+    right: -28px;
+    width: 66px;
+    top: 16px;
+}
+
+.transfer-business .diamond {
+    position: absolute;
+    bottom: -31px;
+    right: 32px;
+    animation: circular-motion 32s linear infinite;
+}
+
+.transfer-business .image-wrapper img {
+    animation: float 8s infinite;
+}
+
+.transfer-business .future-expertise {
+    padding-bottom: 56px;
+    background: linear-gradient(180deg, rgba(2, 137, 87, 0.24) 0, rgba(2, 137, 87, .06) 100%);
+    box-shadow: 0 4px 24px 1px rgba(35, 16, 94, .25);
+    backdrop-filter: blur(45px);
+    z-index: -1;
+}
+
+.transfer-business .future-expertise ul li {
+    font-family: "Inter", sans-serif;
+}
+
+.transfer-business .future-expertise ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(94.78deg, #fff 1.7%, rgba(255, 255, 255, .44) 100.26%);
+}
+
+.transfer-business .next-gen-two {
+    display: none;
+}
+
+.transfer-business .darksoul-glowing-button1 {
+    margin-top: -20px;
+}
+
+/* transfer business section end  */
+
+
+/* recogntion Continous Innovation Section start */
+.continous-innovation .achievement {
+    max-width: 15%;
+}
+
+/* recogntion Continous Innovation Section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199.98px) {
+
+    .service-solutions .nav .nav-link {
+        padding-top: 34px;
+        padding-bottom: 34px;
+
+    }
+
+    .service-solutions .tab-content {
+        padding: 33px;
+
+    }
+
+    .service-solutions .tab-content .app-components .app-development {
+        width: 34%;
+    }
+
+    .team-section .gradient-curve {
+        z-index: 1;
+        padding: 40px 15px 40px;
+    }
+
+
+    .brand-section .btn-tertiary {
+        margin-top: 50px;
+    }
+
+    .businesses-section ul li {
+        font-size: 15px;
+    }
+
+    .transfer-business .future-expertise ul li {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 1400px) {
+    .service-solutions .tab-content .app-components .app-development {
+        width: 32%;
+    }
+
+    .transfer-business .diamond-icon,
+    .transfer-business .diamond {
+        width: 84px;
+
+    }
+
+    .transfer-business .toy-icon {
+        width: 56px;
+    }
+}
+
+
+@media screen and (max-width:991.98px) {
+    .hero-section .slick-track .slick-slide {
+        width: 4% !important;
+    }
+
+    .team-section .gradient-curve {
+        padding: 35px 0px 35px;
+    }
+
+    .team-section .gradient-curve {
+        z-index: 1;
+    }
+
+    .brand-section .btn-tertiary {
+        margin-top: 45px;
+    }
+
+    .businesses-section ul li {
+        font-size: 14px;
+    }
+
+    .transfer-business .diamond-icon {
+        width: 14%;
+    }
+
+    .transfer-business .diamond-icon,
+    .transfer-business .diamond {
+        width: 70px;
+
+    }
+
+    .transfer-business .toy-icon {
+        width: 50px;
+    }
+
+    .transfer-business .future-expertise {
+        padding-bottom: 45px;
+    }
+
+    .continous-innovation .achievement {
+        max-width: 20%;
+    }
+
+
+}
+
+@media screen and (max-width:767.98px) {
+    .hero-section .plus-two {
+        top: 3px;
+        right: -4px;
+    }
+
+    .team-section .delivering-section-one {
+        left: -41px;
+        top: 26%;
+    }
+
+    .team-section .gradient-curve {
+        padding: 25px 20px 25px;
+    }
+
+    .brand-section .btn-tertiary {
+        margin-top: 40px;
+    }
+
+    .businesses-section ul li {
+        font-size: 12px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .transfer-business .diamond-icon {
+        width: 11px;
+        height: 11px;
+
+    }
+
+    .transfer-business .diamond {
+        width: 12%;
+        right: -9px;
+    }
+
+    .transfer-business .future-expertise ul li {
+        font-size: 13px;
+    }
+
+    .transfer-business .future-expertise {
+        padding-bottom: 40px;
+    }
+
+    .continous-innovation .achievement {
+        max-width: 25%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .service-solutions .accordion-button {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .team-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .team-section .delivering-section-one {
+        left: -35px;
+        top: 41px;
+        font-size: 14px;
+    }
+
+
+    .brand-section .slick-track .slick-slide img {
+        width: 50% !important;
+    }
+
+    .brand-section .btn-tertiary {
+        margin-top: 35px;
+    }
+
+    .transfer-business .future-expertise ul li {
+        font-size: 12px;
+    }
+
+    .transfer-business .diamond-icon {
+        top: -32px;
+        left: 21px;
+        width: 60px;
+    }
+
+    .transfer-business .diamond {
+        right: 24px;
+    }
+
+    .transfer-business .future-expertise {
+        padding-bottom: 35px;
+    }
+
+    .transfer-business .darksoul-glowing-button1 {
+        margin-left: 22px;
+    }
+
+    .continous-innovation .achievement {
+        max-width: 33%;
+    }
+
+    .continous-innovation .badge-image {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 450.98px) {
+    .team-section .delivering-section-one {
+        left: -18px;
+    }
+}
+
+@media screen and (max-width: 415.98px) {
+    .team-section .delivering-section-one {
+        left: 0px;
+        top: 0px;
+        transform: translate(50px, 50px);
+    }
+}
+
+@media screen and (max-width: 370.98px) {
+    .transfer-business .next-gen-one {
+        display: none;
+    }
+
+    .transfer-business .next-gen-two {
+        display: block;
+    }
+
+    .team-section .delivering-section-one {
+        left: -45px;
+    }
+}
+
+@media screen and (max-width: 300.98px) {
+    .team-section .delivering-section-one {
+
+        left: -29px;
+        font-size: 10px;
+    }
+
+}
