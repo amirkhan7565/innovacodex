@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/ux-design.css">
+</head>
+
+<body>
+    <!-- <canvas></canvas> -->
+    <canvas id="fluid"></canvas>
+    <!-- nav-section start -->
+    <section class="nav-section bg-black position-absolute  start-0 end-0 top-0 z-3">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg  py-3 position-relative ">
+                    <a class="navbar-brand text-white" href=" index.html"> navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div
+                            class="offcanvas-body nav-body d-lg-flex align-items-center justify-content-end gap-3 gap-md-4 gap-xl-5 d-none d-lg-block">
+                            <ul
+                                class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-start align-items-lg-center gap-3 gap-md-4 gap-xl-5 ">
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="#">Services</a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li class="gradient-text  pb-4">Product Strategy & Consultation</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="product-discovery.html">Product
+                                                    Discovery
+                                                    and
+                                                    Design
+                                                    Sprints</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="mvp-development.html">MVP
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="digital-product.html">Digital
+                                                    Product and Development</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text pb-4">App Development</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="mobile-app.html">Mobile
+                                                    App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="android-app.html">
+                                                    Android App Development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="iphone-app.html">
+                                                    iPhone App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="ipad-app.html"> iPad
+                                                    App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="wearable-app.html">
+                                                    Wearable App Development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="Iot-app.html">
+                                                    IoT App Development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="ibeacon.html">
+                                                    iBeacon App Development
+                                                </a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text pb-4">Web Development</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="CMS-web.html">CMS Web Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="progressive-web.html">
+                                                    PWA Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="ecommerce-web.html">
+                                                    eCommerce Web Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="php-web.html"> PHP Web Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="chatbot-web.html">
+                                                    Chatbot Development
+                                                </a></li>
+
+
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text pb-4"> Trending Services</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="AIdevelopment.html">AI Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="nodejs.html">NodeJs Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="angularjs.html">
+                                                    Angular JS Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="react-native.html">
+                                                    React Native Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="html5-app.html"> HTML5 App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="flutter-app.html">
+                                                    Flutter App Development
+                                                </a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="#">Web3.0</a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="blockchain.html">Blockchain development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="smart-contract.html">Smart Contracts</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="nft.html">NFT</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="crypto-exchange.html">Exchanges</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="metaverse.html">Metaverse</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="dapps-development.html">
+                                                    dapps development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="crypto-wallet.html">
+                                                    Wallets</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="#">Developers</a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="hire-android-developer.html">Hire Android app developers</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="hire-flutter-developer.html">Hire Flutter app developers</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-blockchain.html">Hire Blockchain developers</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-ios-app.html">Hire iOS app developers</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-react-native.html">
+                                                    Hire React Native app developers
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="#">Industries</a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="healthcare.html">Healthcare</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="m-commerce.html">m-Commerce</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="e-learning.html">e-Learning</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="travel.html">Travel</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="logistics.html">Logistics</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="on-demand.html">On Demand</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="fintech.html">Fintech</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="saas.html">
+                                                    Saas
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="restaurant.html">Restaurant</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="ott.html">
+                                                    OTT
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="social-networking.html">
+                                                    Social Networking
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                        href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" href="#">Company</a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="about-us.html">About Us</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="testimonial.html">Testimonials</a>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="life-mobilecoderz.html">life@mobilecoderz</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="career.html">
+                                                    Career
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item  d-block d-lg-none">
+                                    <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                        href="#">Contact us</a>
+                                </li>
+                            </ul>
+                            <div class="darksoul-glowing-button1 btn-secondary d-none d-lg-flex ">
+                                <a href=""
+                                    class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                                    type="button">
+                                    Contact
+                                </a>
+                            </div>
+                            <div class="phone d-none d-lg-flex align-items-center justify-content-center">
+                                <i
+                                    class="fa-solid fa-phone d-flex align-items-center justify-content-center rounded-circle"></i>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body responsive-nav nav-body  d-block d-lg-none">
+                            <ul
+                                class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-start align-items-lg-center gap-3 gap-md-4 gap-xl-5 ">
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link services text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                        <span>Services</span>
+                                        <span class="chevron d-block d-lg-none"></span>
+                                    </a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li class="gradient-text fs-16 pb-3 pb-lg-4">Product Strategy & Consultation
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative position-relative"
+                                                    href="product-discovery.html">Product
+                                                    Discovery
+                                                    and
+                                                    Design
+                                                    Sprints</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative position-relative"
+                                                    href="mvp-development.html">MVP
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="digital-product.html">Digital
+                                                    Product and Development</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text fs-16 pb-3 pb-lg-4">App Development</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="mobile-app.html">Mobile
+                                                    App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="android-app.html">
+                                                    Android App Development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="iphone-app.html">
+                                                    iPhone App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="ipad-app.html"> iPad
+                                                    App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="wearable-app.html">
+                                                    Wearable App Development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    IoT App Developmen
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    iBeacon App Development
+                                                </a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text fs-16 pb-3 pb-lg-4">Web Development</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="">CMS Web Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    PWA Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    eCommerce Web Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#"> PHP Web Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    Chatbot Development
+                                                </a></li>
+
+
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li class="gradient-text fs-16 pb-3 pb-lg-4"> Trending Services</li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="">NodeJs Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    Angular JS Development </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    React Native Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#"> HTML5 App Development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                    href="#">
+                                                    Flutter App Development
+                                                </a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link web text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                        <span>Web3.0</span>
+                                        <span class="chevron d-block d-lg-none"></span>
+                                    </a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="blockchain.html">Blockchain development</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="smart-contract.html">Smart Contracts</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="nft.html">NFT</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="crypto-exchange.html">Exchanges</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="metaverse.html">Metaverse</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="dapps-development.html">
+                                                    dapps development
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="crypto-wallet.html">
+                                                    Wallets</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link developers text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                        <span>Developers</span>
+                                        <span class="chevron d-block d-lg-none"></span>
+                                    </a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="hire-android-developer.html">Hire Android app developers</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="hire-flutter-developer.html">Hire Flutter app developers</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-blockchain.html">Hire Blockchain developers</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-ios-app.html">Hire iOS app developers</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="hire-react-native.html">
+                                                    Hire React Native app developers
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link industries text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                        <span>Industries</span>
+                                        <span class="chevron d-block d-lg-none"></span>
+                                    </a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="healthcare.html">Healthcare</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="m-commerce.html">m-Commerce</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="e-learning.html">e-Learning</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="travel.html">Travel</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="logistics.html">Logistics</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="on-demand.html">On Demand</a></li>
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="fintech.html">Fintech</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="saas.html">
+                                                    Saas
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="restaurant.html">Restaurant</a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="ott.html">
+                                                    OTT
+                                                </a></li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="social-networking.html">
+                                                    Social Networking
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                        href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                    <a class="nav-link company text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                        <span>Company</span>
+                                        <span class="chevron d-block d-lg-none"></span>
+                                    </a>
+                                    <div class="dropdown-menu bg-black">
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="about-us.html">About us</a>
+                                            </li>
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                    href="testimonial.html">Testimonials</a>
+                                            </li>
+
+                                        </ul>
+
+                                        <ul class="p-0">
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="life-mobilecoderz.html">life@mobilecoderz</a></li>
+
+                                            <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                    href="career.html">Career</a></li>
+
+                                        </ul>
+
+                                    </div>
+
+                                </li>
+                                <li class="nav-item  d-block d-lg-none">
+                                    <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                        href="#">Contact us</a>
+                                </li>
+                            </ul>
+                            <a href="" class="btn btn-secondary px-3  px-xl-4 py-2 d-none d-lg-block">CONTACT</a>
+
+                            <div class="phone d-none d-lg-flex align-items-center justify-content-center">
+                                <i
+                                    class="fa-solid fa-phone d-flex align-items-center justify-content-center rounded-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- nav-section end -->
+
+
+    <!-- product-disocvery section start -->
+    <div class="product-discovery container pt-180">
+        <div class="row row-gap-5">
+            <div class="col-12 col-md-8">
+                <h1 class="text-gradient text-center text-md-start pb-1 pb-xl-2 mb-2 mb-lg-3 mb-xl-4 ">
+                    UI/UX Services
+                </h1>
+                <p class="fs-18 text-center text-md-start pb-2 pb-lg-3 pb-xl-4">Designs, denen man vertraut. Erlebnisse,
+                    die überzeugen.
+                    Innovacodex gestaltet benutzerzentrierte digitale Lösungen mit klarem Fokus auf Funktionalität und
+                    Ästhetik. Unser Team entwickelt intuitive, leistungsstarke Interfaces für Web und Mobile - kreativ
+                    durchdacht, strategisch umgesetzt. Von der Idee bis zum Launch stehen Usability, Interaktion und
+                    nachhaltiges Wachstum im Vordergrund.
+                </p>
+                <div
+                    class="d-flex align-items-center justify-content-center justify-content-md-start gap-4 mt-2 mt-xl-3">
+                    <div class="darksoul-glowing-button1 btn-secondary d-flex  ">
+                        <a href=""
+                            class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                            type="button">
+                            Portfolio ansehen</a>
+                        </a>
+                    </div>
+                    <div class="darksoul-glowing-button1 btn-secondary d-flex ">
+                        <a href=""
+                            class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                            type="button">
+                            Angebot anfordern</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class=" d-flex flex-wrap justify-content-center p-0">
+                    <li class="p-4 p-sm-2 p-lg-3 p-xl-4 w-50"><a href=""><img src="assets/images/goodfirmsLogo.png"></a>
+                    </li>
+                    <li class="p-4 p-sm-2 p-lg-3 p-xl-4 w-50"><a href=""><img src="assets/images/clutch-image.webp">
+                        </a>
+                    </li>
+                    <li class="p-4 p-sm-2 p-lg-3 p-xl-4  w-50"><a href=""><img
+                                src="assets/images/appfuturaLogo.png"></a>
+                    </li>
+                    <li class="p-4 p-sm-2 p-lg-3 p-xl-4 w-50"><a href=""><img src="assets/images/upwork-logo.webp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- product-disocvery section end -->
+
+
+    <!-- product delivery section start -->
+    <div class="product-delivery container bottom-border pb-120 mt-120">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="  text-center fw-bold">Wo Design auf Strategie trifft</h2>
+                <div class="row align-items-center row-gap-3 pt-1 mt-3 mt-lg-4 mt-xl-5">
+                    <div class="col-12 col-md-5">
+                        <div class="image-wrapper">
+                            <img src="assets/images/productdiscovery.webp" class="w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p class="delivery-content text-center text-md-start"> Wir gehen über reine Ästhetik hinaus.
+                            Unser Prozess basiert auf
+                            einem tiefen Verständnis Ihrer Nutzer, Ihrer Marke und Ihrer Ziele. Wir analysieren
+                            Nutzerverhalten, Geschäftskennzahlen und Markttrends, um Erlebnisse zu schaffen, die nicht
+                            nur gut aussehen - sondern noch besser funktionieren.
+                            <br><br>
+                            Indem wir die richtigen Fragen stellen -
+                            Wer sind Ihre Nutzer? Was brauchen sie? Wie bewegen sie sich durch Ihre Anwendung? - <br>
+                            entwerfen wir intuitive Nutzerreisen, die Vertrauen schaffen, Interaktion fördern und Ihr
+                            Unternehmen voranbringen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product delivery section end -->
+
+
+    <!-- the goals section start -->
+    <div class="the-goals container bottom-border pb-120 mt-120 ">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+                <h3 class="text-gradient">Ziele der UI/UX-Services</h3>
+                <ul class="px-0">
+                    <li class="d-flex align-items-center gap-3 pt-2 mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Nutzerzufriedenheit steigern</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Benutzerfreundlichkeit und Barrierefreiheit verbessern
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Engagement und Konversionsraten erhöhen</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Starke Markenidentität aufbauen</span>
+                    </li>
+                    <li class="py-2  mt-2 mt-md-3 mt-lg-4">
+                        <p class="fs-18  pe-md-4">“Durch einen strukturierten UI/UX-Prozess können Kunden erheblich Zeit
+                            und Entwicklungskosten sparen.
+                            Klare Nutzerflüsse, frühzeitige Validierung und konsistentes Design minimieren
+                            Nachbesserungen, beschleunigen die Umsetzung und sorgen dafür, dass das Produkt den
+                            tatsächlichen Nutzerbedürfnissen entspricht
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="assets/images/ladders.webp" class="w-100 ">
+            </div>
+        </div>
+    </div>
+    <!-- the goals section end -->
+
+
+    <!-- why businesses need section start -->
+    <!-- <div class="businesses-need container bottom-border pb-3 pb-lg-4 mt-80 ">
+        <div class="row align-items-center row-gap-5">
+            <div class="col-12 col-md-4">
+                <img src="assets/images/productpresentation.webp" class="w-100">
+            </div>
+            <div class="col-12 col-md-8 ps-md-5">
+                <h3 class="text-gradient">Why do Businesses Need Product Discovery?</h3>
+                <ul class="px-0">
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Clear and Precise Understanding of Goals
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Build result-oriented Strategy </span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2 mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Reduce Development costs and time </span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Cater To Right Targeted Audience </span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 pt-2  mt-2 mt-md-3 mt-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Uncover the right assumptions and risks</span>
+                    </li>
+                    <li class="py-2 my-2 my-md-3 my-lg-4">
+                        <img src="assets/images/arrowbowicon.png">
+                        <span class="fs-20">Defining the right problem statement</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- businesses need section end -->
+
+
+    <!-- Product Phases section start -->
+    <div class="product-phases container  bottom-border   pb-120 mt-120 ">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fw-bold text-md-center ">Unser ganzheitlicher UI/UX-Designprozess
+                </h2>
+
+                <div class="row row-gap-5 align-items-center mt-80 mb-108">
+                    <div class="col-12 col-md-7 col-lg-8 pe-lg-5">
+                        <div class="d-flex align-items-center ">
+                            <img src="assets/images/ideation-team.png" class="ideation-team">
+                            <h4 class="fs-24 gradient-text fw-bold">Schritt 1 : Mind Mapping </h4>
+                        </div>
+                        <p>Wir starten mit einem Mind Mapping, um jede Nutzerinteraktion Schritt für Schritt zu
+                            erfassen. Dieser Prozess basiert auf gründlicher Recherche und hilft uns, Workflows und User
+                            Journeys klar zu visualisieren.
+
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="image-wrapper w-100 h-100">
+                            <img src="assets/images/teamalignmentimage.webp"
+                                class="w-100 h-100 objec-fit-cover rounded-3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row  row-gap-5 align-items-center mb-108">
+                    <div class="col-12 col-md-7 col-lg-8 pe-lg-5 order-1 order-md-2">
+                        <div class="d-flex align-items-center ">
+                            <img src="assets/images/ideationIcon.png" class="ideation-team">
+                            <h4 class="fs-24 gradient-text fw-bold">Schritt 2 : Moodboard-Erstellung </h4>
+                        </div>
+                        <p>Wir sammeln visuelle Inspiration - Layouts, Farben, Stile - und erstellen Moodboards. Diese
+                            dienen als kreative Leitlinie und sorgen dafür, dass das Design mit Ihrer Markenästhetik
+                            übereinstimmt.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 order-2 order-md-1">
+                        <div class="image-wrapper w-100 h-100">
+                            <img src="assets/images/performinguserresearchimage.webp"
+                                class="w-100 h-100 objec-fit-cover rounded-3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-5 align-items-center mb-108">
+                    <div class="col-12 col-md-7 col-lg-8 pe-lg-5">
+                        <div class="d-flex align-items-center ">
+                            <img src="assets/images/bowandarrow.png" class="ideation-team">
+                            <h4 class="fs-24 gradient-text fw-bold">Schritt 3 : Wireframing </h4>
+                        </div>
+                        <p>Low-Fidelity-Wireframes definieren die Struktur und Logik der Anwendung - ohne visuelle
+                            Ablenkungen. Diese Skizzen bilden das Fundament für ein nahtloses Nutzererlebnis.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="image-wrapper w-100 h-100">
+                            <img src="assets/images/ideationimage.webp" class="w-100 h-100 objec-fit-cover rounded-3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-5  align-items-center mb-108">
+                    <div class="col-12 col-md-7 col-lg-8 pe-lg-5 order-1 order-md-2">
+                        <div class="d-flex align-items-center ">
+                            <img src="assets/images/wireframing.png" class="ideation-team">
+                            <h4 class="fs-24 gradient-text fw-bold">Schritt 4 : Konzeptdesign </h4>
+                        </div>
+                        <p>Wir gestalten 1-3 farbige Beispiel-Screens, die den finalen Look vermitteln. Auf Basis Ihres
+                            Feedbacks verfeinern wir das Design nach Ihren Vorstellungen.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 order-2 order-md-1">
+                        <div class="image-wrapper w-100 h-100">
+                            <img src="assets/images/prototypingimagephase.webp"
+                                class="w-100 h-100 objec-fit-cover rounded-3">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row row-gap-5 align-items-center">
+                    <div class="col-12 col-md-7 col-lg-8 pe-lg-5">
+                        <div class="d-flex align-items-center ">
+                            <img src="assets/images/sprintplanningicon.png" class="ideation-team">
+                            <h4 class="fs-24 gradient-text fw-bold">Schritt 5 : Vollständiges UI-Design </h4>
+                        </div>
+                        <p>Nach der Freigabe gestalten wir die gesamte Benutzeroberfläche inklusive Farben, Schriften,
+                            Icons, Branding und Animationen. Sie erhalten zudem ein komplettes UI-Kit für eine
+                            konsistente Entwicklung.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="image-wrapper w-100 h-100">
+                            <img src="assets/images/performinguserresearchimage (1).webp"
+                                class="w-100 h-100 objec-fit-cover rounded-3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Phases section end -->
+
+
+    <!-- team involved section start -->
+    <div class="team-section container bottom-border   pb-120 mt-120">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fw-bold text-lg-center mb-3">Was wir anbieten </h2>
+                <p class="fs-18 text-lg-center">Wir bieten umfassende UI/UX-Services - von der Recherche und Wireframes
+                    bis
+                    zum finalen Design - und schaffen intuitive, ansprechende und markenkonforme digitale Erlebnisse,
+                    die Ergebnisse liefern.
+                </p>
+
+                <div class="row  align-items-center row-gap-3 pt-1 mt-3 mt-lg-4 mt-xl-5">
+                    <div class="col-12 col-lg-8">
+                        <div class="teams d-flex flex-wrap row-gap-4 gap-md-4 gap-xl-5 pt-2 pt-lg-3  pt-xl-5">
+                            <div class="team-involved  pe-sm-2  me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">UX-Design</h6>
+                                <p class="fs-15">Nutzerflüsse entwerfen, die User mühelos durch Ihr Produkt führen.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">UI-Design </h6>
+                                <p class="fs-15">Ein modernes, ansprechendes Design, das Ihre Markenidentität stärkt.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Prototyping </h6>
+                                <p class="fs-15"> Interaktive Prototypen zur Visualisierung von Aufbau und Funktion.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Visuelles Design </h6>
+                                <p class="fs-15">Inhalte und Layouts kombinieren, um eine reibungslose Nutzerreise zu
+                                    schaffen.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Branding </h6>
+                                <p class="fs-15">Persönlichkeit zeigen mit individuellen Schriften, Stilen und
+                                    Designelementen.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Interaction Design</h6>
+                                <p class="fs-15">Nutzerzentrierte Erlebnisse gestalten, die im Gedächtnis bleiben.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw
+                                
+                                -bold gradient-text bottom-border pb-2">Content-Strategie</h6>
+                                <p class="fs-15">Inhalte planen, die ansprechen, informieren und begeistern.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Informationsarchitektur </h6>
+                                <p class="fs-15">Inhalte klar strukturieren für eine intuitive Navigation.
+                                </p>
+                            </div>
+                            <div class="team-involved  pe-sm-2 me-sm-5">
+                                <h6 class="fs-18 fw-bold gradient-text bottom-border pb-2">Motion Design </h6>
+                                <p class="fs-15">nimation gezielt einsetzen, um Aufmerksamkeit zu lenken und
+                                    Interaktionen zu erleichtern.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="image-wrapper text-center">
+                            <img src="assets/images/creativeteam.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team involved section end -->
+
+
+    <!-- when business need section start -->
+    <!-- <div class="container product-need bottom-border pb-3 pb-lg-4 mt-80">
+        <div class="row row-gap-3">
+            <div class="col-12 col-lg-6">
+                <h2 class="fw-bold">Warum Innovacodex für UI/UX-Design wählen?
+                </h2>
+                <p class="fs-18 mt-3 mt-lg-4">Product discovery is deciding every element of what to build. Developing
+                    an idea
+                    based on assumptions
+                    and without any strategy can be risky. You may end up wasting your efforts, time, and money.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <ul class="px-0">
+                    <li class="d-flex gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Branchenexpertise</h6>
+                            <p class="fs-13">Mit jahrelanger Praxiserfahrung liefert unser Designteam Arbeiten auf
+                                Branchenstandard, die Erwartungen übertreffen.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex   gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Datenbasiertes Design </h6>
+                            <p class="fs-13"> Unsere Entscheidungen basieren auf Nutzerforschung und Verhaltensanalysen
+                                - nicht auf Vermutungen.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex   gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Kollaborativer Workflow </h6>
+                            <p class="fs-13">
+                                Wir sehen unsere Kunden als kreative Partner und binden Sie in jeden Schritt des
+                                Designprozesses mit ein.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex   gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Standardmäßig responsiv</h6>
+                            <p class="fs-13">Alle unsere Designs sind mobiloptimiert und passen sich nahtlos an alle
+                                Geräte und Bildschirmgrößen an.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex   gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Skalierbar & zukunftssicher </h6>
+                            <p class="fs-13">Wir gestalten mit Blick auf Wachstum - damit Ihr Produkt sich
+                                weiterentwickeln kann, ohne dass das Design neu gedacht werden muss.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex   gap-3 gap-lg-4 mt-3 mt-lg-4">
+                        <div class="checkbox">
+                            <img src="assets/images/checkbox.svg">
+                        </div>
+                        <div class="ideal-situation">
+                            <h6 class="fs-18 fw-bold mb-1 mb-sm-2">Support nach dem Launch</h6>
+                            <p class="fs-13">Wir hören nach der Übergabe nicht auf. Unser Team steht bereit, um Ihr
+                                Design zu betreuen, weiterzuentwickeln und bei Bedarf zu skalieren.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- when business need section end -->
+
+
+    <!-- outcomes section start -->
+    <!-- <div class="outcomes-section container bottom-border  pb-120 mt-120 ">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fw-bold text-center mb-3">Warum Innovacodex für UI/UX-Design wählen?</h2>
+                <p class="fs-18 text-center mb-3">Innovacodex liefert nutzerzentrierte, markengerechte Designs, die
+                    Funktionalität und Ästhetik perfekt verbinden - für effiziente und überzeugende digitale Erlebnisse.
+                </p>
+                <div class="row">
+                    <div class="col-12">
+                        <div
+                            class="ideal-outcomes d-flex flex-wrap align-items-center justify-content-center gap-3 pt-1 mt-3 mt-md-4 mt-xl-5">
+                            <div class="card bg-green p-2 p-lg-3 p-xl-4 rounded-3 ">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/communityicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Branchenexpertise </h5>
+                                </div>
+                                <p class="fs-15 gray-text py-2 py-xl-3">Mit langjähriger Praxiserfahrung liefert unser
+                                    Designteam Arbeiten auf höchstem Niveau - zuverlässig und überzeugend.
+                                </p>
+                            </div>
+                            <div class="card bg-green p-2 p-lg-3 p-xl-4 rounded-3 ">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/identifyingicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Datenbasiertes Design </h5>
+                                </div>
+                                <p class="fs-15 gray-text py-2 py-xl-3">Jede Entscheidung basiert auf Nutzerforschung
+                                    und Verhaltensanalysen - nicht auf Vermutungen.
+                                </p>
+                            </div>
+                            <div class="card bg-green p-2  p-lg-3 p-xl-4  rounded-3">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/successsicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Kollaborativer Workflow </h5>
+                                </div>
+                                <p class="fs-15 gray-text py-2 py-xl-3">Unsere Kunden sind kreative Partner. Wir
+                                    beziehen Sie in jeden Schritt des Designprozesses mit ein.
+                                </p>
+                            </div>
+                            <div class="card bg-green p-2  p-lg-3 p-xl-4  rounded-3">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/ideaicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Standardmäßig responsiv </h5>
+                                </div>
+                                <p class="fs-15 gray-text  py-2 py-xl-3">Unsere Designs sind mobiloptimiert und passen
+                                    sich reibungslos an alle Bildschirmgrößen und Geräte an.
+                                </p>
+                            </div>
+                            <div class="card bg-green p-2  p-lg-3 p-xl-4  rounded-3">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/ideaicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Skalierbar & zukunftssicher </h5>
+                                </div>
+                                <p class="fs-15 gray-text  py-2 py-xl-3">Wir gestalten mit Blick auf Wachstum - damit
+                                    Ihr Produkt mit Ihren Anforderungen mitwachsen kann.
+                                </p>
+                            </div>
+                            <div class="card bg-green p-2  p-lg-3 p-xl-4  rounded-3">
+                                <div class="d-flex align-items-center gap-3 gap-xl-4">
+                                    <div class="image-wrapper">
+                                        <img src="assets/images/ideaicon.png">
+                                    </div>
+                                    <h5 class="text-white fw-bold">Support nach dem Launch </h5>
+                                </div>
+                                <p class="fs-15 gray-text  py-2 py-xl-3">Nach Projektabschluss sind wir weiterhin für
+                                    Sie da - für Optimierungen, Anpassungen und zukünftige Weiterentwicklungen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- outcomes section end-->
+
+
+
+    <!-- healthcare features section start -->
+    <div class="container features-section bottom-border  pb-120 mt-120">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fw-bold text-md-center">Why choose Innovacodex for UI/UX design?</h2>
+
+                <div class="row align-items-center mt-80">
+                    <div class="col-12 col-md-5">
+                        <img src="assets/images/features.webp">
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="applications-list d-flex flex-column gap-4  gap-xl-5 ps-lg-5 ms-lg-3">
+                            <div class="application-section  d-flex flex-column flex-md-row gap-2 gap-md-3  gap-lg-4 ">
+                                <span class="number fs-48 dark-gray">01</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Branchenexpertise </h5>
+                                    <p class="fs-14">Mit langjähriger Praxiserfahrung liefert unser Designteam Arbeiten
+                                        auf höchstem Niveau - zuverlässig und überzeugend.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="application-section  d-flex  flex-column flex-md-row gap-2 gap-md-3  gap-lg-4  ">
+                                <span class="number fs-48 dark-gray">02</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Datenbasiertes Design </h5>
+                                    <p class="fs-14">Jede Entscheidung basiert auf Nutzerforschung und
+                                        Verhaltensanalysen - nicht auf Vermutungen.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="application-section  d-flex  flex-column flex-md-row gap-2 gap-md-3  gap-lg-4  ">
+                                <span class="number fs-48 dark-gray">03</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Kollaborativer Workflow </h5>
+                                    <p class="fs-14">Unsere Kunden sind kreative Partner. Wir beziehen Sie in jeden
+                                        Schritt des Designprozesses mit ein.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="application-section  d-flex  flex-column flex-md-row gap-2 gap-md-3  gap-lg-4  ">
+                                <span class="number fs-48 dark-gray">04</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Standardmäßig responsiv </h5>
+                                    <p class="fs-14">Unsere Designs sind mobiloptimiert und passen sich reibungslos an
+                                        alle Bildschirmgrößen und Geräte an.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="application-section  d-flex  flex-column flex-md-row gap-2 gap-md-3  gap-lg-4  ">
+                                <span class="number fs-48 dark-gray">05</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Skalierbar & zukunftssicher </h5>
+                                    <p class="fs-14">Wir gestalten mit Blick auf Wachstum - damit Ihr Produkt mit Ihren
+                                        Anforderungen mitwachsen kann.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="application-section  d-flex  flex-column flex-md-row gap-2 gap-md-3  gap-lg-4  ">
+                                <span class="number fs-48 dark-gray">06</span>
+                                <div class="application-heading">
+                                    <h5 class="fw-bold gradient-text">Support nach dem Launch</h5>
+                                    <p class="fs-14">Nach Projektabschluss sind wir weiterhin für Sie da - für
+                                        Optimierungen, Anpassungen und zukünftige Weiterentwicklungen.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- healthcare features section end -->
+
+
+    <!-- project section start -->
+    <div class="container project-section mt-120 mb-120 rounded-3 position-relative bg-green">
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                <h3 class="fs-26 fw-bold text-white">Haben Sie ein Projekt im Kopf?
+                </h3>
+                <p class="fs-18 text-white pb-2 mt-3 mb-2 mb-lg-3 mb-xl-4 ">Sprechen Sie direkt mit unseren Experten und
+                    erfahren Sie, wie wir Ihre Ideen in die Realität umsetzen können.
+                </p>
+                <a href="" class="btn experts fw-bold rounded-3 bg-green text-white ">Sprechen Sie mit unseren
+                    Experten</a>
+            </div>
+            <div class="col-5">
+                <div class="image-wrapper position-absolute end-0 d-none d-lg-block">
+                    <img src="assets/images/haveaProjectImage.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project section end -->
+
+
+
+    <!-- footer-section start -->
+    <div class="container footer-section px-lg-0  py-40  ">
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-6 col-md-2">
+                <h6 class="fs-18 gradient-text mb-2">Company</h6>
+                <ul class="ps-0">
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">Career</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Contact Us</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">SiteMap</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <h6 class="fs-18 gradient-text mb-2">Industries</h6>
+                <ul class="ps-0">
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">Android App Development</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">iPhone App Development</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">iOT App Development</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Blockchain App Development</a>
+                    </li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">React Native Development</a>
+                    </li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Flutter App Development</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">iBeacon App Development</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">PWA Development</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                <h6 class="fs-18 gradient-text mb-2">Company</h6>
+                <ul class="ps-0">
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">Healthcare</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Fintech</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">mCommerce</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">e-Learning</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">OTT</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Social Networking </a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">On Demand</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3  col-lg-2">
+                <h6 class="fs-18 gradient-text mb-2">Resources</h6>
+                <ul class="ps-0">
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2">Blog</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block my-2">Press Releases</a></li>
+                    <li><a href="" class="fs-13 text-white d-inline-block py-2"> Guides</a></li>
+                    <ul class="guidence ps-0 mt-2">
+                        <li><a href="" class="fs-10 text-green d-inline-block my-1"> Guide for Web 3.0</a>
+                        </li>
+                        <li><a href="" class="fs-10 text-green d-inline-block py-1"> Guide for Mobile App
+                                Development</a>
+                        </li>
+                        <li><a href="" class="fs-10 text-green d-inline-block my-1"> Guide for Android App
+                                Development</a>
+                        </li>
+                        <li><a href="" class="fs-10 text-green d-inline-block py-1">Guide for App Development
+                                Cost</a>
+                        </li>
+                        <li><a href="" class="fs-10 text-green d-inline-block my-1"> more...</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-12  col-lg-2">
+                <ul
+                    class="social-icons d-flex flex-row flex-lg-column align-items-center justify-content-center text-center ps-0 mb-0">
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 py-md-2"><i
+                                class="fa-brands fa-behance"></i></a></li>
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 py-md-2"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""
+                            class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                class="fa-brands fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer-section end -->
+
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+</body>
+
+</html>

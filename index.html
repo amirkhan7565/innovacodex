@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovacodex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+
+    <!-- <canvas></canvas> -->
+    <canvas id="fluid"></canvas>
+    <!-- x letter enlarge start -->
+    <div class='experience'>
+        <div class='experience-show'>
+            <div class='experience-middle-container'>
+                <model-viewer id="threedd" class="experience-middle" src="dark 7.glb" alt="3D Model">
+            </div>
+        </div>
+        <div class="extraBox">
+            <!-- nav-section start -->
+            <section class="nav-section position-fixed start-0 end-0 top-0 ">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg px-4 px-sm-0 py-3 position-relative ">
+                            <a class="navbar-brand text-white" href=" index.html"> navbar</a>
+                            <div id="languageSwitcher">
+                                <a href="#" class="text-white fw-bold" onclick="translatePage('de')">DE </a> |
+                                <a href="#" class="text-white fw-bold" onclick="translatePage('en')">EN</a>
+                            </div>
+
+                            <div id="google_translate_element" style="display: none;"></div>
+
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({
+                                        pageLanguage: 'de',
+                                        includedLanguages: 'de,en',
+                                        autoDisplay: false
+                                    }, 'google_translate_element');
+                                }
+
+                                function translatePage(lang) {
+                                    var selectField = document.querySelector(".goog-te-combo");
+                                    if (selectField) {
+                                        selectField.value = lang;
+                                        selectField.dispatchEvent(new Event("change"));
+                                    }
+                                }
+                            </script>
+
+                            <script type="text/javascript"
+                                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                aria-label="Toggle navigation">
+                                <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-start text-bg-dark w-100" tabindex="-1"
+                                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div
+                                    class="offcanvas-body nav-body d-lg-flex align-items-center justify-content-end gap-3 gap-md-4 gap-xl-5 d-none d-lg-block">
+                                    <ul
+                                        class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-start align-items-lg-center gap-3 gap-md-4 gap-xl-5 ">
+                                        <li class="nav-item dropdown ">
+                                            <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false"
+                                                href="#">Dienstleistungens</a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li class="gradient-text  pb-4">Design </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="UX-Design.html">UI/UX-Design</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="mvp-development.html">Grafikdesign</a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li class="gradient-text pb-4"> Entwicklung</li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="mobile-app.html">Entwicklung mobiler Apps</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="android-app.html">
+                                                            Webentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="wearable-app.html">
+                                                            Spielentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="Iot-app.html">
+                                                            IoT-Webentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="ibeacon.html">
+                                                            Softwareentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="CMS-web.html">CMS-Webentwicklung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="ecommerce-web.html">
+                                                            E-Commerce-Webentwicklung</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="AIdevelopment.html">KI-Entwicklung </a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li class="gradient-text pb-4"> Marketing</li>
+
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="nodejs.html">Digitales Marketing </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="angularjs.html">
+                                                            Suchmaschinenoptimierung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="react-native.html">
+                                                            Suchmaschinenmarketing</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="html5-app.html"> Social-Media-Marketing </a></li>
+
+                                                </ul>
+                                                <ul class="p-0">
+                                                    <li class="gradient-text pb-4"> Beliebte Dienstleistungen</li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="angularjs.html">
+                                                            Content-Erstellung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="react-native.html">
+                                                            It Support</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="html5-app.html"> Datenengineering</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="flutter-app.html">
+                                                            Cybersicherheit
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        <!-- <li class="nav-item dropdown ">
+                                            <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Web3.0</a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="blockchain.html">Blockchain development</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="smart-contract.html">Smart Contracts</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="nft.html">NFT</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="crypto-exchange.html">Exchanges</a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="metaverse.html">Metaverse</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="dapps-development.html">
+                                                            dapps development
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="crypto-wallet.html">
+                                                            Wallets</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </li> -->
+                                        <!-- <li class="nav-item dropdown ">
+                                            <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Developers</a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="hire-android-developer.html">Hire Android app
+                                                            developers</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="hire-flutter-developer.html">Hire Flutter app
+                                                            developers</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="hire-blockchain.html">Hire Blockchain developers</a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="hire-ios-app.html">Hire iOS app developers</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="hire-react-native.html">
+                                                            Hire React Native app developers
+                                                        </a></li>
+                                                </ul>
+
+                                            </div>
+                                        </li> -->
+
+                                        <!-- <li class="nav-item dropdown ">
+                                            <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Industries</a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="healthcare.html">Healthcare</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="m-commerce.html">m-Commerce</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="e-learning.html">e-Learning</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="travel.html">Travel</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="logistics.html">Logistics</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="on-demand.html">On Demand</a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="fintech.html">Fintech</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="saas.html">
+                                                            Saas
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="restaurant.html">Restaurant</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="ott.html">
+                                                            OTT
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="social-networking.html">
+                                                            Social Networking
+                                                        </a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </li> -->
+                                        <li class="nav-item">
+                                            <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                                href="portfolio.html">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item dropdown ">
+                                            <a class="nav-link  fs-15 text-white px-0 py-3 py-xl-4" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false" href="#">Unternehmen</a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="about-us.html"> Über uns</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="testimonial.html">Kundenstimmen</a>
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="life-mobilecoderz.html">Leben bei Innovacodex</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="career.html">
+                                                            Karriere
+                                                        </a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li class="nav-item  d-block d-lg-none">
+                                            <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                                href="#">Kontakt</a>
+                                        </li>
+                                    </ul>
+                                    <div class="darksoul-glowing-button1 btn-secondary d-none d-lg-flex ">
+                                        <a href=""
+                                            class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                                            type="button">
+                                            Kontakt
+                                        </a>
+                                    </div>
+                                    <div class="phone d-none d-lg-flex align-items-center justify-content-center">
+                                        <i
+                                            class="fa-solid fa-phone d-flex align-items-center justify-content-center rounded-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="offcanvas-body responsive-nav nav-body  d-block d-lg-none">
+                                    <ul
+                                        class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-start align-items-lg-center gap-3 gap-md-4 gap-xl-5 ">
+                                        <li class="nav-item dropdown ">
+                                            <a class="nav-link services text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                                <span>Dienstleistungen</span>
+                                                <span class="chevron d-block d-lg-none"></span>
+                                            </a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <!-- <li class="gradient-text fs-16 pb-3 pb-lg-4">Designing
+                                                    </li> -->
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative position-relative"
+                                                            href="UX-Design.html"> UI/UX-Design</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative position-relative"
+                                                            href="mvp-development.html">Grafikdesign </a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="mobile-app.html">Entwicklung mobiler Apps</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="android-app.html">
+                                                            Webentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="wearable-app.html">
+                                                            Spielentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            IoT-Webentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            Softwareentwicklung
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="">CMS-Webentwicklung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="ecommerce-web.html">
+                                                            E-Commerce-Webentwicklung</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="AIdevelopment.html">
+                                                            KI-Entwicklung</a></li>
+                                                </ul>
+
+                                                <ul class="p-0">
+
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            Digitales Marketing </a></li>
+
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#"> Suchmaschinenoptimierung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            Suchmaschinenmarketing
+                                                        </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            Social-Media-Marketing
+                                                        </a></li>
+
+
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="">Content-Erstellung </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            It Support</a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#">
+                                                            Datenengineering </a></li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-2 mb-lg-3 position-relative"
+                                                            href="#"> Cybersicherheit </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                                href="#">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item dropdown ">
+                                            <a class="nav-link company text-white  fs-15  d-flex align-items-center px-0 py-3 py-xl-4"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+                                                <span>Unternehmen</span>
+                                                <span class="chevron d-block d-lg-none"></span>
+                                            </a>
+                                            <div class="dropdown-menu bg-black">
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="about-us.html">Über uns</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative position-relative"
+                                                            href="testimonial.html">Kundenstimmen</a>
+                                                    </li>
+
+                                                </ul>
+
+                                                <ul class="p-0">
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="life-mobilecoderz.html">Leben bei Innovacodex </a>
+                                                    </li>
+
+                                                    <li><a class="dropdown-item text-white fs-13 ps-4 pe-0 mb-3 position-relative"
+                                                            href="career.html"> Karriere</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+                                        <li class="nav-item  d-block d-lg-none">
+                                            <a class="nav-link fs-15  text-white  px-0 py-3 py-xl-4" aria-current="page"
+                                                href="#">Kontakt</a>
+                                        </li>
+                                    </ul>
+                                    <a href=""
+                                        class="btn btn-secondary px-3  px-xl-4 py-2 d-none d-lg-block">Kontakt</a>
+
+                                    <div class="phone d-none d-lg-flex align-items-center justify-content-center">
+                                        <i
+                                            class="fa-solid fa-phone d-flex align-items-center justify-content-center rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <!-- nav-section end -->
+
+
+            <!-- hero-section start -->
+            <div class="container hero-section position-relative pt-100 pb-100  overflow-hidden ">
+                <div class="row align-items-center justify-content-center row-gap-5">
+                    <div class="col-12 col-md-7 ">
+                        <div class="hero-description-section pe-0 pe-md-4">
+                            <div class="position-relative">
+                                <img src="assets/images/plus.svg" class="plus">
+                                <img src="assets/images/opening-decor-1.png" class="line-decor position-absolute ">
+                            </div>
+                            <h1 class="fst-italic  text-center text-md-start  mt-4 mb-3 mb-lg-4">Wo Ihre Vision auf
+                                unsere <span class="text-green">
+                                    Innovation</span>
+                                trifft
+                            </h1>
+                            <p class="fs-16 fst-italic text-center text-md-start mb-4 d-none d-xl-block">Innovacodex
+                                verwandelt Geschäftsziele in
+                                skalierbare
+                                Technologielösungen <br> - entwickelt für Wirkung, Wachstum und nachhaltigen Erfolg.
+                            </p>
+                            <p class="fs-16 fst-italic text-center text-md-start mb-4 d-block d-xl-none">Innovacodex
+                                verwandelt Geschäftsziele in
+                                skalierbare
+                                Technologielösungen - entwickelt für Wirkung, Wachstum und nachhaltigen Erfolg.
+                            </p>
+                            <div class="position-relative">
+                                <img src="assets/images/opening-decor-1.png" class="line-decor-two  ">
+                                <img src="assets/images/plus.svg" class="plus-two position-absolute">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="image-wrapper d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                            <img src="assets/images/glitch-1.png">
+                        </div>
+                    </div>
+
+                    <div class="brand-images slider pt-2 mt-2 pt-sm-3 mt-sm-3 pt-md-4 mt-lg-4  pt-lg-5 mt-lg-5 py-3 ">
+                        <img src="assets/images/aws-partner-logo.webp ">
+                        <img src="assets/images/google-cloud-platform-gcp-logo.webp">
+                        <img src="assets/images/ms-silver.webp">
+                        <img src="assets/images/googleDeveloperAgency.webp">
+                        <img src="assets/images/Jira-Align-header.webp">
+                    </div>
+                </div>
+            </div>
+
+            <!-- hero-section end -->
+        </div>
+    </div>
+    <!-- x letter enlarge end -->
+
+
+    <!-- service-solutions section start -->
+    <div class="container service-solutions py-80 position-relative overflow-hidden">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto ">
+                    <h2 class="text-anim fw-bold text-center mb-3 mb-md-4 mb-lg-5">Innovation in Aktion oder Antrieb für
+                        Ihre digitale Reise
+                    </h2>
+                </div>
+                <div class="row align-items-center d-none d-lg-flex">
+                    <div class="col-12 col-md-5 px-0">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link d-flex align-items-center gap-3 ps-4 rounded-4 rounded-md-0 active"
+                                id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                <span class="numbers text-white fs-14 d-none d-md-block ">1</span>
+                                <h6 class="text-white fw-normal d-inline-block"> UI/UX-Design
+                                </h6>
+                            </button>
+
+                            <button class="nav-link d-flex align-items-center gap-3 ps-4 rounded-4 rounded-md-0"
+                                id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                                type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"
+                                tabindex="-1">
+                                <span class="numbers text-white fs-14 d-none d-md-block ">02</span>
+                                <h6 class="text-white fw-normal d-inline-block"> KI-Entwicklung </h6>
+                            </button>
+
+                            <button class="nav-link d-flex align-items-center gap-3 ps-4 rounded-4 rounded-md-0"
+                                id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+                                type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"
+                                tabindex="-1">
+                                <span class="numbers text-white fs-14 d-none d-md-block ">03</span>
+                                <h6 class="text-white fw-normal d-inline-block"> Digitales Marketing
+                                </h6>
+                            </button>
+
+                            <button class="nav-link d-flex align-items-center gap-3 ps-4 rounded-4 rounded-md-0"
+                                id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+                                type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                                tabindex="-1">
+                                <span class="numbers text-white fs-14 d-none d-md-block ">04</span>
+                                <h6 class="text-white fw-normal d-inline-block"> Cybersicherheit</h6>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 px-0">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <div class="mobile-app">
+                                    <h3 class="text-green mb-3">UI/UX-Design
+                                    </h3>
+                                    <p class="text-gray">Designs, die funktionieren, fließen und mit Ihrem Unternehmen
+                                        wachsen.
+                                    </p>
+                                    <div class="app-components d-flex align-items-center py-3 mt-3  ">
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green"></i>
+                                            <span class="d-block fs-15 text-gray my-3"> Entdeckung & <br>
+                                                Nutzerforschung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Wireframing <br> & Prototyping
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Visuelles Design <br> & Testing
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="darksoul-glowing-button1 btn-primary d-flex   mt-3 mt-lg-4">
+                                        <a href=""
+                                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5  "
+                                            type="button">
+                                            <span class="me-2">Erkunden</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <div id="mobile-app">
+                                    <h3 class="text-green mb-3">KI-Entwicklung </h3>
+                                    <p class="text-gray"> Skalierbare KI-Tools, die Entscheidungsprozesse verbessern und
+                                        Innovationen fördern.</p>
+                                    <div class="app-components d-flex align-items-center py-3 mt-3  ">
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3"> Datenerfassung <br> &
+                                                -aufbereitung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Modelltraining <br> &
+                                                -bereitstellung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3"> Leistungstests <br> &
+                                                Optimierung
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="darksoul-glowing-button1 btn-primary d-flex   mt-3 mt-lg-4">
+                                        <a href=""
+                                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5  "
+                                            type="button">
+                                            <span class="me-2">Erkunden</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                <div id="mobile-app">
+                                    <h3 class="text-green mb-3">Digitales Marketing</h3>
+                                    <p class="text-gray">Wir helfen Ihnen, aufzufallen, die richtige Zielgruppe zu
+                                        erreichen und in einer schnelllebigen digitalen Welt vorne zu bleiben.</p>
+                                    <div class="app-components d-flex align-items-center py-3 mt-3  ">
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Strategische <br> Planung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3"> Kampagnenstart <br> &
+                                                -optimierung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Leistungsanalyse <br> & Einblicke
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="darksoul-glowing-button1 btn-primary d-flex   mt-3 mt-lg-4">
+                                        <a href=""
+                                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5  "
+                                            type="button">
+                                            <span class="me-2">Erkunden</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                <div id="mobile-app">
+                                    <h3 class="text-green mb-3">Cybersicherheit
+                                    </h3>
+                                    <p class="text-gray">Wir halten Ihr Unternehmen sicher mit proaktiven und
+                                        anpassungsfähigen Cybersicherheitslösungen.
+                                    </p>
+                                    <div class="app-components d-flex align-items-center py-3 mt-3  ">
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Risikoanalyse & <br>
+                                                Gefahrenanalyse
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3"> Sicherheitsplanung <br> &
+                                                Umsetzung
+                                            </span>
+                                        </div>
+                                        <div class="app-development px-2">
+                                            <i
+                                                class="fa-solid fa-mobile d-flex align-items-center justify-content-center rounded-3 fs-26 bg-green "></i>
+                                            <span class="d-block fs-15 text-gray my-3">Echtzeitüberwachung <br> &
+                                                schnelle Reaktion
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="darksoul-glowing-button1 btn-primary d-flex   mt-3 mt-lg-4">
+                                        <a href=""
+                                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5  "
+                                            type="button">
+                                            <span class="me-2">Erkunden</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-block d-lg-none ">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item bg-transparent border-0 mb-4">
+                            <h6 class="accordion-header">
+                                <button class="accordion-button text-white fs-14 rounded-4 shadow-none py-sm-3 "
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    MOBILE APP DEVELOPMENT
+                                </button>
+                            </h6>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse ">
+                                <div class="accordion-body p-3">
+                                    <div class="mobile-app">
+                                        <p class="text-gray">Expand your market reach and improve your user
+                                            experience
+                                            by
+                                            developing
+                                            mobile apps for
+                                            Android, iOS, &amp; windows.</p>
+                                        <div class="app-components  py-3 mt-2 mt-md-3  ">
+                                            <div class="app-development d-flex align-items-center gap-3">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center fs-14  "></i>
+                                                <span class=" fs-14 text-gray my-3">Android App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3"> IOS App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Cross-Platform
+                                                    App Development
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-0 mt-3 mb-4">
+                            <h6 class="accordion-header">
+                                <button class="accordion-button text-white fs-14 rounded-4 shadow-none py-sm-3 "
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    WEB DEVELOPMENT
+                                </button>
+                            </h6>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse ">
+                                <div class="accordion-body p-3">
+                                    <div class="mobile-app">
+                                        <p class="text-gray">Expand your market reach and improve your user
+                                            experience
+                                            by
+                                            developing
+                                            mobile apps for
+                                            Android, iOS, &amp; windows.</p>
+                                        <div class="app-components  py-3 mt-2 mt-md-3  ">
+                                            <div class="app-development d-flex align-items-center gap-3">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Android App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3"> IOS App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Cross-Platform
+                                                    App Development
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-0 mt-3 mb-4">
+                            <h6 class="accordion-header">
+                                <button class="accordion-button text-white fs-14 rounded-4 shadow-none py-sm-3 "
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    PRODUCT DESIGN AND STRATEGY
+                                </button>
+                            </h6>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body p-3">
+                                    <div class="mobile-app">
+                                        <p class="text-gray">Expand your market reach and improve your user
+                                            experience
+                                            by
+                                            developing
+                                            mobile apps for
+                                            Android, iOS, &amp; windows.</p>
+                                        <div class="app-components  py-3 mt-2 mt-md-3  ">
+                                            <div class="app-development d-flex align-items-center gap-3">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Android App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3"> IOS App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Cross-Platform
+                                                    App Development
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-transparent border-0 mt-3">
+                            <h6 class="accordion-header">
+                                <button class="accordion-button text-white fs-14 rounded-4 shadow-none py-sm-3 "
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                    WEB 3.0
+                                </button>
+                            </h6>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse ">
+                                <div class="accordion-body p-3">
+                                    <div class="mobile-app">
+                                        <p class="text-gray">Expand your market reach and improve your user
+                                            experience
+                                            by
+                                            developing
+                                            mobile apps for
+                                            Android, iOS, &amp; windows.</p>
+                                        <div class="app-components  py-3 mt-2 mt-md-3  ">
+                                            <div class="app-development d-flex align-items-center gap-3">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Android App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3"> IOS App Development
+                                                </span>
+                                            </div>
+                                            <div class="app-development d-flex align-items-center gap-3 ">
+                                                <i
+                                                    class="fa-solid fa-mobile text-white d-flex align-items-center justify-content-center  fs-14 "></i>
+                                                <span class=" fs-14 text-gray my-3">Cross-Platform
+                                                    App Development
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sservice-solutions section end -->
+
+
+
+    <!-- brand section start -->
+    <!-- <div class="container brand-section pt-3 pb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-anim fw-bold text-center mb-3 mb-md-4 mb-lg-5">Trusted By 100+ Happy Brands</h2>
+
+                <div class="brands slider">
+                    <img src="assets/images/fedexWhiteLogo.webp">
+                    <img src="assets/images/carnivalWhiteLogo.webp">
+                    <img src="assets/images/finkuWhiteLogo.webp">
+                    <img src="assets/images/flyinWhiteLogo.webp">
+                    <img src="assets/images/glamWhiteLogo.webp">
+                    <img src="assets/images/aws-partner-logo.webp">
+                    <img src="assets/images/clockifyWhiteLogo.webp">
+                    <img src="assets/images/fedexWhiteLogo.webp">
+                    <img src="assets/images/carnivalWhiteLogo.webp">
+                    <img src="assets/images/finkuWhiteLogo.webp">
+                    <img src="assets/images/flyinWhiteLogo.webp">
+                    <img src="assets/images/glamWhiteLogo.webp">
+                    <img src="assets/images/aws-partner-logo.webp">
+                    <img src="assets/images/clockifyWhiteLogo.webp">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="darksoul-glowing-button1 btn-primary d-flex mt-3 mt-lg-4 mx-auto">
+                        <a href=""
+                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5  "
+                            type="button">
+                            <span class="me-2">Watch Our Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+    <!-- brand section end -->
+
+
+    <!-- Crafting Impeccable Experiences section start -->
+    <div class="container crafting-experiences my-80">
+        <div class="row">
+            <div class="col-12 col-xl-7">
+                <h2 class="fw-bold">Warum Innovacodex Ihre beste Wahl ist </h2>
+                <p class="fs-18 my-3 my-xl-4">Bei Innovacodex bauen wir nicht nur Technologie — wir gestalten die
+                    Zukunft der Wirtschaft. Unser Team ist angetrieben von einer Leidenschaft für Innovation und dem
+                    Anspruch, intelligente, skalierbare Lösungen zu liefern, die die Arbeitsweise und das Wachstum von
+                    Unternehmen nachhaltig verändern.
+                </p>
+                <div class="mvp-content position-relative">
+                    <h5 class="fs-18 fw-bold gradient-text pb-1 pb-md-2 pb-lg-3 mb-1 mb-md-2 mb-lg-3 position-relative">
+                        Unsere Kernwerte</h5>
+                    <p class="fs-15"><b>Integrität : </b> Wir glauben daran, immer das Richtige zu tun. <br>
+
+                        <b> Zusammenarbeit : </b> Großartige Ergebnisse entstehen durch gemeinsames Arbeiten. <br>
+
+                        <b>Exzellenz : </b> Wir streben in jeder Lösung, die wir liefern, nach außergewöhnlicher
+                        Qualität.
+                        <br>
+                        <br>
+                        Diese Werte sind das Fundament unserer Arbeit - und der Grund, warum Kunden Innovacodex
+                        vertrauen, wenn es um den Erfolg ihrer Projekte geht.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="image-wrapper d-none d-xl-block">
+                    <img src="assets/images/mobilecoderzofficeemployees.webp">
+                </div>
+            </div>
+
+
+            <div class="row row-gap-3 pt-40">
+                <div class="col-12 col-md-6">
+                    <div class="mvp-content position-relative">
+                        <h5
+                            class="fs-18 fw-bold gradient-text pb-1 pb-md-2 pb-lg-3 mb-1 mb-md-2 mb-lg-3 position-relative">
+                            Unsere Mission </h5>
+                        <p class="fs-15">Unternehmen mit modernsten digitalen Lösungen zu befähigen, Wachstum zu
+                            beschleunigen, Abläufe zu optimieren und nachhaltige Wirkung zu erzielen. Wir setzen auf
+                            Kreativität, Zuverlässigkeit und wertvolle Partnerschaften, um unseren Kunden selbstbewusst
+                            voranzubringen.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mvp-content position-relative">
+                        <h5
+                            class="fs-18 fw-bold gradient-text pb-1 pb-md-2 pb-lg-3 mb-1 mb-md-2 mb-lg-3 position-relative">
+                            Unsere Vision
+                        </h5>
+                        <p class="fs-15">Der bevorzugte Technologiepartner für zukunftsorientierte Unternehmen zu werden
+                            — digitale Exzellenz neu zu definieren und durch kontinuierliche Innovation
+                            unvergleichlichen Mehrwert zu bieten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Crafting Impeccable Experiences section end -->
+
+
+    <!-- businesses prefer us section start -->
+    <!-- <div class="container businesses-section  my-40">
+        <div class="row row-gap-5 animation-group">
+            <div class="col-12 col-lg-7 p-0">
+                <div data-animation="fadeInLeft">
+                    <h2 class=" fw-bold px-4 px-md-0 ">Unsere Kernwerte</h2>
+                    <div
+                        class="d-flex justify-content-between justify-content-lg-start flex-wrap flex-sm-nowrap column-gap-3 pt-2 pt-md-3 px-4 px-md-0  mt-2  mt-md-3 mt-lg-4 ">
+                        <div>
+                            <ul class="d-flex flex-column ps-0 gap-3 gap-md-4">
+                                <li class="position-relative ps-4">Integrität</li>
+                                <li class="position-relative ps-4">Zusammenarbeit</li>
+                                <li class="position-relative ps-4">Exzellenz</li>
+                                <li class="position-relative ps-4">Innovation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="d-flex flex-column justify-content-end ps-0 gap-3 gap-md-4">
+                                <li class="position-relative ps-4">Verantwortung </li>
+                                <li class="position-relative ps-4">Kundenorientierung</li>
+                                <li class="position-relative ps-4">Transparenz </li>
+                                <li class="position-relative ps-4">Kontinuierliche Verbesserung</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="darksoul-glowing-button1 btn-secondary d-flex mx-4 mx-md-0   mt-3">
+                        <a href=""
+                            class="darksoul-button1 fs-14  d-flex align-items-center justify-content-center rounded-5   "
+                            type="button">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="image-wrapper" data-animation="fadeInRight">
+                    <img src="assets/images/am.png" class="w-100 h-100 object-fit-cover rounded-3">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- businesses prefer us section end -->
+
+
+    <!-- masterpiece section start -->
+    <div class="container digital-masterpiece  py-80  ">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-anim text-center fw-bold  ">Our Digital Masterpieces</h2>
+                <div class="row mt-2 mt-sm-3 mt-md-4 mt-lg-5 pt-2">
+                    <div class="col-12">
+                        <div class="swiper-container swiper1">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide d-block d-md-flex " data-swiper-autoplay="6000">
+                                    <img class="d-block  h-auto object-fit-cover  "
+                                        src="assets/images/portfolioImage-relovo.webp" alt="First slide">
+                                    <div class="content-section bg-green">
+                                        <p class="fs-14 mb-2 mb-md-3 mb-xl-4">Food & Drink <span class="ps-2 ms-2">
+                                                Business</span></p>
+                                        <h3 class="fw-bold mb-2 mb-md-3 mb-xl-4">RELEVO</h3>
+                                        <h4 class="mb-2 mb-md-3 mb-xl-4">Innovative Food & Drinks App</h4>
+                                        <p class="pb-0 pb-md-2  pb-lg-3 mb-0 mb-sm-2 mb-md-3 mb-lg-4  mb-xl-5 ">
+                                            t is
+                                            a
+                                            long established fact
+                                            that a
+                                            reader will be
+                                            distracted by
+                                            the
+                                            readable content
+                                            of a page when looking at its layout. The point of using Lorem Ipsum
+                                            is
+                                            that
+                                            it has
+                                            a more-or-less normal distribution of letters, as opposed to using
+                                            'Content
+                                            here,
+                                            content here', making it look like readable English. Many desktop
+                                            publishing
+                                            packages and web page editors now use Lorem Ipsum as their default
+                                            model
+                                            text, and a
+                                            search for 'lorem ipsum' will uncover many web sites still in their
+                                            infancy.
+                                            Various
+                                            versions have evolved over the years, sometimes by accident,
+                                            sometimes
+                                            on
+                                            purpose
+                                            (injected humour and the like).</p>
+
+                                        <a href="" class="fs-14 dark-gray ">VIEW PORTFOLIO</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-block d-md-flex" data-swiper-autoplay="6000">
+                                    <img class="d-block h-auto  object-fit-cover " src="assets/images/finkuImg.webp"
+                                        alt="Second slide">
+                                    <div class="content-section bg-green">
+                                        <p class="fs-14 mb-2 mb-md-3 mb-xl-4">Food & Drink <span class="ps-2 ms-2">
+                                                Business</span></p>
+                                        <h3 class="fw-bold mb-2 mb-md-3 mb-xl-4">RELEVO</h3>
+                                        <h4 class="mb-2 mb-md-3 mb-xl-4">Innovative Food & Drinks App</h4>
+                                        <p class="pb-0 pb-md-2  pb-lg-3 mb-0 mb-sm-2 mb-md-3 mb-lg-4  mb-xl-5">t
+                                            is
+                                            a
+                                            long established fact that a reader
+                                            will be
+                                            distracted
+                                            by
+                                            the
+                                            readable content
+                                            of a page when looking at its layout. The point of using Lorem Ipsum
+                                            is
+                                            that
+                                            it
+                                            has
+                                            a more-or-less normal distribution of letters, as opposed to using
+                                            'Content
+                                            here,
+                                            content here', making it look like readable English. Many desktop
+                                            publishing
+                                            packages and web page editors now use Lorem Ipsum as their default
+                                            model
+                                            text,
+                                            and a
+                                            search for 'lorem ipsum' will uncover many web sites still in their
+                                            infancy.
+                                            Various
+                                            versions have evolved over the years, sometimes by accident,
+                                            sometimes
+                                            on
+                                            purpose
+                                            (injected humour and the like).</p>
+
+                                        <a href="" class="fs-14 dark-gray">VIEW PORTFOLIO</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-block d-md-flex" data-swiper-autoplay="8000">
+                                    <img class="d-block h-auto object-fit-cover  "
+                                        src="assets/images/portfolioImage-flyin.webp" alt="Third slide">
+                                    <div class="content-section bg-green">
+                                        <p class="fs-14 mb-2 mb-md-3 mb-xl-4">Food & Drink <span class="ps-2 ms-2">
+                                                Business</span></p>
+                                        <h3 class="fw-bold mb-2 mb-md-3 mb-xl-4">RELEVO</h3>
+                                        <h4 class="mb-2 mb-md-3 mb-xl-4">Innovative Food & Drinks App</h4>
+                                        <p class="pb-0 pb-md-2  pb-lg-3 mb-0 mb-sm-2 mb-md-3 mb-lg-4  mb-xl-5">t
+                                            is
+                                            a
+                                            long established fact that a
+                                            reader
+                                            will be
+                                            distracted
+                                            by
+                                            the
+                                            readable content
+                                            of a page when looking at its layout. The point of using Lorem Ipsum
+                                            is
+                                            that
+                                            it
+                                            has
+                                            a more-or-less normal distribution of letters, as opposed to using
+                                            'Content
+                                            here,
+                                            content here', making it look like readable English. Many desktop
+                                            publishing
+                                            packages and web page editors now use Lorem Ipsum as their default
+                                            model
+                                            text,
+                                            and a
+                                            search for 'lorem ipsum' will uncover many web sites still in their
+                                            infancy.
+                                            Various
+                                            versions have evolved over the years, sometimes by accident,
+                                            sometimes
+                                            on
+                                            purpose
+                                            (injected humour and the like).</p>
+
+                                        <a href="" class="fs-14 dark-gray">VIEW PORTFOLIO</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <!-- <div class=" d-flex align-items-center justify-content-center gap-2 mt-4 pt-2"> -->
+                            <div class=" swiper-pagination pt-0 pt-md-1 pt-lg-2 mt-2 mt-md-3 mt-lg-4  position-static ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- masterpiece section end -->
+
+
+    <!-- transfer business section start -->
+    <div class="container transfer-business pt-60 pb-60 pb-sm-0 px-40 my-80  position-relative  ">
+        <img src="assets/images/diamondIcon-fotor-2024102031958.png" class="diamond-icon">
+        <img src="assets/images/toyIcon-fotor-2024102032737.png" class="toy-icon d-none d-md-block">
+        <img src="assets/images/diamondIcon1-fotor-2024102032149.png" class="diamond">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12 col-sm-9 mx-sm-auto">
+                    <div>
+                        <div class="transform-heading d-flex align-items-center justify-content-end">
+                            <h3 class="text-green text-start text-sm-center">Innovation antreiben mit
+                                Next-Gen-Technologie
+                            </h3>
+                            <img src="assets/images/desktopmanfloating.svg" class="w-50  d-block d-sm-none">
+                        </div>
+                        <p class="fs-18 dark-gray  text-sm-center mt-3 ">Bei Innovacodex nutzen wir aufkommende
+                            Technologien, um intelligente, skalierbare und zukunftssichere digitale Lösungen zu
+                            entwickeln. Ob Sie Abläufe optimieren, Nutzererlebnisse verbessern oder Ihr Unternehmen
+                            zukunftsfähig machen möchten - unsere Expertise in modernster Technologie macht es möglich.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-gap-5  pt-sm-3 pt-lg-4  mt-4 mt-sm-4 mt-lg-5 ">
+                    <div class="col-12 col-lg-6 d-none d-sm-block order-2 order-lg-1 ">
+                        <div class="image-wrapper">
+                            <img src="assets/images/image_transparent_Craiyon (2).png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="future-expertise px-3 pt-3 px-lg-4 pt-lg-4 position-relative rounded-4 ">
+                            <h5 class="next-gen-one text-gradient fw-bold text-sm-center mb-3">Next-Gen-Technologien,
+                                auf die wir
+                                <br>
+                                spezialisiert sind
+
+                            </h5>
+                            <h5 class="next-gen-two text-gradient fw-bold text-sm-center mb-3">Next-Gen-Technologien,
+                                auf die wir spezialisiert sind
+                            </h5>
+                            <div
+                                class="d-flex align-items-center justify-content-sm-center  flex-wrap column-gap-2 column-gap-lg-0 ">
+                                <ul class="d-flex flex-column mb-2 mb-sm-0  gap-2 gap-md-3 ps-0">
+                                    <li class="ps-4 position-relative"> Künstliche Intelligenz </li>
+                                    <li class="ps-4 position-relative"> Internet der Dinge </li>
+                                    <li class="ps-4 position-relative"> Cloud-Computing </li>
+                                </ul>
+                                <ul class="d-flex flex-column  gap-2 gap-md-3 ps-0">
+                                    <li class="ps-4 position-relative">Maschinelles Lernen </li>
+                                    <li class="ps-4 position-relative">Erweiterte & Virtuelle Realität </li>
+                                    <li class="ps-4 position-relative">Cybersicherheitstechnologien</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="darksoul-glowing-button1 btn-secondary d-flex mx-auto z-3 ">
+                            <a href=""
+                                class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                                type="button">
+                                Weitere Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- transfer business section end -->
+
+
+    <!-- team section start -->
+    <section class=" team-section py-80 ">
+        <div class="container">
+            <div class="row  ">
+                <div class="col-12">
+                    <div class="col-12">
+                        <h2
+                            class="text-anim fw-bold text-center d-block d-md-flex align-items-center justify-content-center mb-4 mb-lg-5 ">
+                            Lernen Sie die Köpfe hinter dem Code kennen
+                        </h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-8 ">
+                            <div class="position-relative z-3">
+                                <div class="image-wrapper  ">
+                                    <img src="assets/images/team -images.webp" class="image w-100 h-100 ">
+                                    <img src="assets/images/aa.png"
+                                        class="image w-100 h-100 object-fit-cover position-absolute start-0 top-0">
+                                </div>
+                                <div>
+                                    <p
+                                        class="delivering-section-one text-white text-center fs-26 fw-bold  d-block d-lg-none position-absolute ">
+                                        "Exzellenz zu liefern ist unsere Stärke."</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <p class="delivering-section-two text-gradient fs-32 fw-bold me-3 d-none d-lg-block">
+                                "Exzellenz zu liefern ist unsere Stärke."</p>
+                        </div>
+                        <div
+                            class="gradient-curve d-flex align-items-center justify-content-center flex-wrap rounded-4 ">
+                            <div class="p-2 p-lg-3 p-xl-4">
+                                <h4 class="text-center text-md-start  mb-0">Zertifiziertes Expertenteam</h4>
+                                <p class="text-center text-md-start fs-20 mt-1">Garantie für Qualität</p>
+                            </div>
+                            <div class="p-2 p-lg-3 p-xl-4">
+                                <h4 class="text-center text-md-start  mb-0">Wir arbeiten gern</h4>
+                                <p class="text-center text-md-start fs-20 mt-1">mit modernsten Tehnologien.</p>
+                            </div>
+                            <div class="p-2 p-lg-3 p-xl-4">
+                                <h4 class="text-center text-md-start  mb-0">Flexibles und skalierbares</h4>
+                                <p class=" text-center text-md-start fs-20 mt-1">agiles Umfeld</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section end -->
+
+
+    <!-- mob app development section start -->
+    <div class="container mob-app  py-80 ">
+        <div class="row">
+            <div class="col-12 ">
+                <h2 class="text-anim fw-bold text-center">How Mobile App Development Can Be A Game-Changer For Your
+                    Business?
+                </h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mob-app-uses animation-group">
+                            <ul
+                                class="d-flex flex-wrap justify-content-center justify-content-lg-start justify-content-lg-center pt-60 px-0">
+                                <li class="d-inline-block" data-animation="fadeInLeft">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3">
+                                        <img src="assets/images/industry-healthcare.png">
+                                        <span class="fs-22 text-white">Healthcare</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInLeft">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-mcommerce.png">
+                                        <span class="fs-22 text-white">M-Commerce</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInLeft">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-elearning.png">
+                                        <span class="fs-22 text-white">E-Learning</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInLeft">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-travel.png">
+                                        <span class="fs-22 text-white">Travel</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInLeft">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-logistic.png">
+                                        <span class="fs-22 text-white">Logistic</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInRight">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-saas.png">
+                                        <span class="fs-22 text-white">Saas</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInRight">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-fintech.png">
+                                        <span class="fs-22 text-white">Fintech</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInRight">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-restaurant.png">
+                                        <span class="fs-22 text-white">Restaurant</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInRight">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-ondemand.png">
+                                        <span class="fs-22 text-white">On Demand</span></a>
+                                </li>
+                                <li class="d-inline-block" data-animation="fadeInRight">
+                                    <a href=""
+                                        class="d-flex flex-column align-items-center justify-content-center gap-2 gap-md-3 dark-bg  rounded-3"><img
+                                            src="assets/images/industry-socialMedia.png">
+                                        <span class="fs-22 text-white">Social Media</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mob app development section end -->
+
+
+    <!-- faq section start -->
+    <div class="container faq-section py-80  ">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-anim fw-bold text-center">Häufig gestellte Fragen
+                </h2>
+
+                <div class="row justify-content-center mt-60">
+                    <div class="col-12 col-md-9">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item bg-transparent rounded-3 p-4 mb-40 ">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Wie lange dauert es, eine Website oder App zu erstellen?
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Die Dauer hängt von der Komplexität des Projekts ab. Einfache Websites können in
+                                        wenigen Wochen fertiggestellt werden, während größere, funktionsreiche
+                                        Anwendungen mehrere Monate in Anspruch nehmen können. Wir legen den Zeitrahmen
+                                        immer klar in der Planungsphase fest.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent  rounded-3 p-4 mb-40">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        Bieten Sie laufenden Support und Wartung an?
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Ja, wir bieten auch nach dem Launch fortlaufenden Support an. Von regelmäßigen
+                                        Updates bis hin zu technischen Fehlerbehebungen - wir sorgen dafür, dass Ihr
+                                        digitales Produkt sicher, funktional und auf dem neuesten Stand bleibt.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent rounded-3 p-4 mb-40">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">
+                                        Was ist der erste Schritt, um ein Projekt mit Ihnen zu starten?
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse  pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Schicken Sie uns einfach eine Nachricht über unser Kontaktformular oder per
+                                        E-Mail. Wir vereinbaren ein Erstgespräch, um Ihre Ziele zu verstehen und eine
+                                        passende Strategie für Ihr Projekt zu entwickeln.
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent rounded-3 p-4 mb-40">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">
+                                        Können Sie unsere bestehende Website oder App verbessern oder neu gestalten?
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse  pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Auf jeden Fall. Ob Sie das Design auffrischen, die Leistung verbessern oder neue
+                                        Funktionen integrieren möchten - wir bringen Ihre Plattform auf den neuesten
+                                        Stand.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent rounded-3 p-4 mb-40">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive">
+                                        Warum sollten wir Innovacodex anderen Tech-Unternehmen vorziehen?
+
+                                    </button>
+                                </h5>
+                                <div id="collapseFive" class="accordion-collapse collapse  pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Wir verbinden Innovation mit persönlicher Betreuung. Unser Team hört zu,
+                                        arbeitet eng mit Ihnen zusammen und liefert Lösungen, die exakt auf Ihre
+                                        Geschäftsziele abgestimmt sind - mit modernster Technologie und bewährten
+                                        Methoden.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent rounded-3 p-4 mb-40 ">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="true" aria-controls="collapseSix">
+                                        Wie viel kostet ein typisches Projekt?
+                                    </button>
+                                </h5>
+                                <div id="collapseSix" class="accordion-collapse collapse  pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Die Kosten variieren je nach Umfang, Funktionen und Anforderungen. Nach einem
+                                        ersten Gespräch erstellen wir ein individuelles Angebot, das auf Ihre
+                                        Bedürfnisse und Ihr Budget abgestimmt ist.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent rounded-3 p-4">
+                                <h5 class="accordion-header">
+                                    <button
+                                        class="accordion-button fs-20 fw-bold text-white p-0 border-0 bg-transparent shadow-none "
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseSeven">
+                                        Wie stellen Sie sicher, dass die Ergebnisse von hoher Qualität sind?
+
+                                    </button>
+                                </h5>
+                                <div id="collapseSeven" class="accordion-collapse collapse pt-2 bg-black"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-0 dark-gray">
+                                        Qualität ist fester Bestandteil unseres gesamten Prozesses. Wir setzen bewährte
+                                        Entwicklungsverfahren ein, testen gründlich und halten kontinuierlichen Kontakt,
+                                        um sicherzustellen, dass alles reibungslos läuft und Ihre Erwartungen erfüllt
+                                        werden.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="darksoul-glowing-button1 btn-secondary d-flex mt-60 mx-auto ">
+                            <a href=""
+                                class="darksoul-button1  fs-14  d-flex align-items-center justify-content-center rounded-5 "
+                                type="button">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq section end -->
+
+
+    <!-- recogntion Continous Innovation Section start -->
+    <!-- <div class="container continous-innovation py-40">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="fw-bold text-center">The Recognitions For Our Continuous Innovation</h2>
+                <p class="text-center d-none d-md-block mt-2 mt-md-3  mt-lg-4 mb-60">Our Mobile App Development Company
+                    Takes
+                    Pride In
+                    Getting These
+                    Achievements With
+                    Sheer Hard <br>
+                    Work, Passion, Knowledge, And Experience. These Recognitions Help Us Build Trust And
+                    Loyalty!
+                </p>
+                <p class="text-center d-block d-md-none mt-2 mt-md-3  mt-lg-4 mb-60">Our Mobile App Development Company
+                    Takes
+                    Pride In
+                    Getting These
+                    Achievements With
+                    Sheer Hard
+                    Work, Passion, Knowledge, And Experience. These Recognitions Help Us Build Trust And
+                    Loyalty!
+                </p>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <div class="achievement d-flex flex-column align-items-center gap-3 text-center">
+                                <div class="badge-image">
+                                    <img src="assets/images/clutch-image.webp">
+                                </div>
+                                <span class="fs-12 gray-color">Top Mobile App Development company in
+                                    Saudi</span>
+                                <h6 class="gray-light">2019</h6>
+                            </div>
+                            <div class="achievement d-flex flex-column align-items-center gap-3 text-center">
+                                <div class="badge-image">
+                                    <img src="assets/images/goodfirms-logo.webp">
+                                </div>
+                                <span class="fs-12 gray-color">Trusted Mobile App Development Company During
+                                    COVID
+                                    19
+                                    Pandemic</span>
+                                <h6 class="gray-light">2020</h6>
+                            </div>
+                            <div class="achievement d-flex flex-column align-items-center gap-3 text-center">
+                                <div class="badge-image">
+                                    <img src="assets/images/designrush-logo.webp">
+                                </div>
+                                <span class="fs-12 gray-color">Top Mobile Application Development Agency Across
+                                    the
+                                    Globe
+                                </span>
+                                <h6 class="gray-light">2021</h6>
+                            </div>
+                            <div class="achievement d-flex flex-column align-items-center gap-3 text-center">
+                                <div class="badge-image">
+                                    <img src="assets/images/upwork-logo.webp">
+                                </div>
+                                <span class="fs-12 gray-color">Top Mobile Application Development Agecy Across
+                                    the
+                                    Globe
+                                </span>
+                                <h6 class="gray-light">2022</h6>
+                            </div>
+                            <div class="achievement d-flex flex-column align-items-center gap-3 text-center">
+                                <div class="badge-image">
+                                    <img src="assets/images/appfuturalogo.webp">
+                                </div>
+                                <span class="fs-12 gray-color">Go to partner for quality PHP web development
+                                    services
+                                </span>
+                                <h6 class="gray-light">2022</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- recogntion Continous Innovation Section end -->
+
+
+    <!-- testimonial section start -->
+    <section class="testimonial-section full section section_to-pin four my-80" id="section_to-pin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div id="section_pin" class="section_pin py-3 py-xl-4">
+                        <div class="testimonial image_wrapper image_wrapper_1   px-40 py-40  rounded-4 border-gradient position-relative "
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                        <div class="testimonial image_wrapper image_wrapper_1   px-40 py-40  rounded-4 border-gradient position-relative"
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                        <div class="testimonial image_wrapper image_wrapper_1   px-40 py-40  rounded-4 border-gradient position-relative"
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                        <div class="testimonial image_wrapper image_wrapper_1  px-40 py-40  rounded-4 border-gradient position-relative"
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                        <div class="testimonial image_wrapper image_wrapper_1   px-40 py-40  rounded-4 border-gradient position-relative "
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                        <div class="testimonial image_wrapper image_wrapper_1   px-40 py-40  rounded-4 border-gradient position-relative"
+                            id="image_wrapper_1">
+                            <div class="client-info d-flex align-items-center justify-content-lg-between gap-3 ">
+                                <div class="image-wrapper">
+                                    <img src="assets/images/grape-testimonial.webp "
+                                        class="w-100 h-100 object-fit-cover rounded-circle">
+                                </div>
+                                <div class="client-name">
+                                    <p class="fs-22 fw-bold">Ali Mahmood </p>
+                                    <p class="fs-12">Founder, Grape Vista</p>
+                                </div>
+                                <div class="rating-stars d-flex d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-description pt-2 pt-md-3 pt-xl-4">
+                                <p>They had excellent developers.The process and the project were
+                                    well-managed.They were able
+                                    to put all of our requested features into the app."</p>
+                            </div>
+                            <a href="" class="d-block fs-13 text-green ">Read Detailed Client
+                                Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end -->
+
+
+    <!-- project inquiries section start -->
+    <div class="container project-inquiries pb-80 ">
+        <div class="row row-gap-3 row-gap-sm-4 justify-content-center">
+            <div class="col-12 col-lg-6 ">
+                <span class="say fs-96 fw-bold d-block text-start text-sm-center text-lg-start ">Say</span>
+                <span
+                    class="howdy fs-120 fw-bold d-flex justify-content-start justify-content-sm-center justify-content-lg-start d-lg-inline ">Howdy!</span>
+
+                <div class="contact-us pt-40 d-none d-lg-block position-relative z-13">
+                    <div class="call-us d-flex align-items-center gap-3 gap-xl-4 pb-2 mb-2 mb-lg-3 mb-xl-4">
+                        <i
+                            class="fa-solid fa-phone-volume fs-20 d-flex align-items-center justify-content-center rounded-3"></i>
+                        <a href="">
+                            <span class="gray-text">CALL US</span>
+                            <p class="text-white fs-20 mt-1"> +491728282239</p>
+                        </a>
+                    </div>
+
+                    <div class="call-us d-flex align-items-center gap-3 gap-xl-4 pb-2 mb-2 mb-lg-3 mb-xl-4">
+                        <i
+                            class="fa-regular fa-envelope fs-26 d-flex align-items-center justify-content-center rounded-3"></i>
+                        <a href="">
+                            <span class="gray-text">MAIL US</span>
+                            <p class="text-white fs-20 mt-1"> Sales Mobilecoderz image</p>
+                        </a>
+                    </div>
+
+                    <div class="call-us d-flex align-items-center gap-3 gap-xl-4 pb-2 mb-2 mb-lg-3 mb-xl-4">
+                        <i
+                            class="fa-brands fa-skype fs-26 d-flex align-items-center justify-content-center rounded-3"></i>
+                        <a href="">
+                            <span class="gray-text">SKYPE US</span>
+                            <p class="text-white fs-20 mt-1"> mobilecoderz</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-11 col-lg-6">
+                <div class="contact-form bg-green px-40 py-40  rounded-1">
+                    <p class="fs-22 fw-bold text-green text-center mb-3 mb-md-4">For Project Inquiries</p>
+                    <form class="d-sm-flex flex-wrap align-items-center column-gap-5" method="POST"
+                        action="sendmail.php">
+                        <div class="ccol-12 col-sm-5 mb-3">
+                            <label class="form-label fs-13 gray-text mb-0">Name</label>
+                            <input type="text" placeholder="Name" name="name"
+                                class="form-control fs-13 text-white rounded-1 p-2 my-2 " aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="col-12 col-sm-5 mb-3">
+                            <label class="form-label fs-13 gray-text mb-0">Email</label>
+                            <input type="email" placeholder="Email" name="email"
+                                class="form-control fs-13 text-white rounded-1 p-2 my-2 " aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12 col-sm-5 mb-3">
+                            <label class="form-label fs-13 gray-text mb-0">Service</label>
+                            <select name="service" class="form-select fs-13 text-white p-2 my-2">
+                                <option selected>Select a Service</option>
+                                <option value="Web development">Web development</option>
+                                <option value="graphic designing">graphic designing</option>
+                                <option value="digital Marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-5 mb-3">
+                            <label class="form-label fs-13 gray-text mb-0">Phone</label>
+                            <input type="number" placeholder="Phone" name="phone"
+                                class="form-control fs-13 text-white rounded-1 p-2 my-2 " aria-describedby="emailHelp">
+                        </div>
+
+                        <div class=" mb-3 w-100">
+                            <label class="form-label gray-text mb-0">Message</label>
+                            <textarea class="form-control text-white p-2 my-2" placeholder="Message..." name="message"
+                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label fs-13" name="label" for="flexCheckDefault">
+                                I agree to receive marketing communications from MobileCoderz
+                            </label>
+                        </div>
+                        <!-- <a href="" class="fs-14  text-white text-center  py-2 bg-green rounded-3 w-100" type="button">
+                            Send Message
+                        </a> -->
+
+                        <button class="button" type="submit">
+                            <a class="default fs-14 text-white text-center px-4 py-2" type="button">
+                                Send Message
+                            </a>
+                            <span class="success">
+                                <svg viewBox="0 0 16 16">
+                                    <polyline points="3.75 9 7 12 13 5"></polyline>
+                                </svg>Sent
+                            </span>
+                            <svg class="trails" viewBox="0 0 33 64">
+                                <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60">
+                                </path>
+                                <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+                            </svg>
+                            <div class="plane">
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div
+                    class="contact-us  d-block d-md-flex d-lg-none justify-content-center gap-3 position-relative z-13 pt-4">
+                    <div class="call-us d-flex align-items-center gap-4 pb-2">
+                        <i
+                            class="fa-solid fa-phone-volume fs-20 d-flex align-items-center  justify-content-center rounded-3 z-3"></i>
+                        <a href="">
+                            <span class="gray-text">CALL US</span>
+                            <p class="text-white fs-20 mt-1"> +491728282239</p>
+                        </a>
+                    </div>
+
+                    <div class="call-us d-flex align-items-center  gap-4  pb-2">
+                        <i
+                            class="fa-regular fa-envelope fs-26 d-flex align-items-center justify-content-center rounded-3 z-3"></i>
+
+                        <a href="">
+                            <span class="gray-text">MAIL US</span>
+                            <p class="text-white fs-20 mt-1"> Sales Mobilecoderz image</p>
+                        </a>
+                    </div>
+
+                    <div class="call-us d-flex align-items-center gap-4  pb-2">
+                        <i
+                            class="fa-brands fa-skype fs-26 d-flex align-items-center justify-content-center rounded-3 z-3"></i>
+                        <a href="">
+                            <span class="gray-text">SKYPE US</span>
+                            <p class="text-white fs-20 mt-1"> mobilecoderz</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project inquiries section end -->
+
+
+    <!-- footer-section start -->
+    <section class="footer ">
+        <div class="container footer-section px-lg-0  py-40 position-relative z-3">
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h6 class="fs-18 gradient-text mb-2">Company</h6>
+                    <ul class="ps-0">
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">Career</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Contact Us</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">SiteMap</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <h6 class="fs-18 gradient-text mb-2">Industries</h6>
+                    <ul class="ps-0">
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">Android App Development</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">iPhone App Development</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">iOT App Development</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Blockchain App Development</a>
+                        </li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">React Native Development</a>
+                        </li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Flutter App Development</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">iBeacon App Development</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">PWA Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <h6 class="fs-18 gradient-text mb-2">Company</h6>
+                    <ul class="ps-0">
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">Healthcare</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Fintech</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">mCommerce</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">e-Learning</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">OTT</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Social Networking </a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">On Demand</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3  col-lg-2">
+                    <h6 class="fs-18 gradient-text mb-2">Resources</h6>
+                    <ul class="ps-0">
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2">Blog</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block my-2">Press Releases</a></li>
+                        <li><a href="" class="fs-13 text-white d-inline-block py-2"> Guides</a></li>
+                        <ul class="guidence ps-0 mt-2">
+                            <li><a href="" class="fs-10 text-green d-inline-block my-1"> Guide for Web 3.0</a>
+                            </li>
+                            <li><a href="" class="fs-10 text-green d-inline-block py-1"> Guide for Mobile App
+                                    Development</a>
+                            </li>
+                            <li><a href="" class="fs-10 text-green d-inline-block my-1"> Guide for Android App
+                                    Development</a>
+                            </li>
+                            <li><a href="" class="fs-10 text-green d-inline-block py-1">Guide for App Development
+                                    Cost</a>
+                            </li>
+                            <li><a href="" class="fs-10 text-green d-inline-block my-1"> more...</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-12  col-lg-2">
+                    <ul
+                        class="social-icons d-flex flex-row flex-lg-column align-items-center  justify-content-md-center text-center ps-0 mb-0">
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                    class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 py-md-2"><i
+                                    class="fa-brands fa-behance"></i></a></li>
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 py-md-2"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href=""
+                                class="fs-26 text-white  d-flex align-items-center justify-content-center rounded-3 my-md-2"><i
+                                    class="fa-brands fa-pinterest-p"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section end -->
+
+
+
+
+
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
