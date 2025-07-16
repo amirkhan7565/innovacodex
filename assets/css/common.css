@@ -743,6 +743,11 @@ p {
     z-index: 13;
 }
 
+
+.nav-section .navbar-brand {
+    width: 200px;
+}
+
 .nav-section .nav-item .nav-link {
     transition: 0.6s ease-in-out;
     position: relative;
@@ -2234,6 +2239,10 @@ p {
         height: 40px;
     }
 
+    .nav-section .navbar-brand {
+        width: 160px;
+    }
+
     .nav-section .nav-item .nav-link:hover::before {
         width: 0;
     }
@@ -2280,7 +2289,6 @@ p {
     }
 
     .project-section {
-        background: url(../images/callActionGradient.png) bottom right / cover no-repeat;
         padding: 33px;
     }
 
@@ -2785,6 +2793,11 @@ p {
         height: 35px;
     }
 
+    .nav-section .navbar-brand {
+        width: 134px;
+    }
+
+
     .footer-section .social-icons li a {
         width: 25px;
         height: 38px;
@@ -2897,6 +2910,10 @@ p {
 @media (max-width: 360px) {
     .hire-resource h3 {
         font-size: 18px;
+    }
+
+    .nav-section .nav-link .chevron {
+        font-size: 8px !important;
     }
 }
 
