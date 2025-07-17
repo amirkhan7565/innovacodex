@@ -16,13 +16,9 @@ project-root/
 ├── README.md                    
 │
 ├── assets/                      
-│   ├── css/
-│   │   └── style.css            
-│   │
+│   ├── css/        
 │   ├── js/
-│   │   └── script.js           
-│   │
-│   └── images/      
+│   ├── images/     
 
 
 ---
